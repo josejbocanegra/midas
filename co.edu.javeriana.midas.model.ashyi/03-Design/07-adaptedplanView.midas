@@ -1,0 +1,9 @@
+Package Ashyi.adaptedplanView;
+
+import Operations.*;
+import Primitives.*;
+import Ashyi.domainModel.*;
+
+function adaptedPlan(in Student student, in Graph graph, in SystemContext context, out List<Device> activities ) {
+	activities<-createPath(student, graph, context);
+}

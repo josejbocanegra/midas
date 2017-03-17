@@ -1,0 +1,9 @@
+Package Ashyi.metaplanView;
+
+import Primitives.*;
+import Operations.*;
+import Ashyi.domainModel.*;
+
+function metaPlan(in List<Device> activities, out Graph graph) {
+	graph <- createGraph(activities);
+}

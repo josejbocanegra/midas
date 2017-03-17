@@ -1,0 +1,6 @@
+Package Ashyi.navigationView;
+
+import Operations.*;
+import Ashyi.adaptationModel.*;
+
+function navigation() {}
