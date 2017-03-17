@@ -3,12 +3,25 @@
   <viewpoint:DAnalysis xmi:id="_4kiPEKEVEeai8tsWyCxc0Q" selectedViews="_Ro1vIKEYEeaVpaNakAVM9w _Vl25sMFWEeaowPRjEWkfQQ" version="11.1.0.201608251200">
     <semanticResources>02-Requirement/profiles.midas</semanticResources>
     <semanticResources>03-Design/content.midas</semanticResources>
+    <semanticResources>01-Core/01-primitives.midas</semanticResources>
+    <semanticResources>01-Core/02-operations.midas</semanticResources>
     <semanticResources>03-Design/01-generalView.dmlas</semanticResources>
     <semanticResources>01-Core/02-operations.dmlas</semanticResources>
     <semanticResources>03-Design/02-ashyiView.dmlas</semanticResources>
     <semanticResources>03-Design/03-contentView.dmlas</semanticResources>
     <semanticResources>03-Design/08-presentation.dmlas</semanticResources>
     <semanticResources>03-Design/09-navigation.dmlas</semanticResources>
+    <semanticResources>03-Design/02-ashyiView.midas</semanticResources>
+    <semanticResources>03-Design/01-globalView.midas</semanticResources>
+    <semanticResources>03-Design/03-contentView.midas</semanticResources>
+    <semanticResources>03-Design/04-createAdaptedPlanView.midas</semanticResources>
+    <semanticResources>03-Design/08-presentationView.midas</semanticResources>
+    <semanticResources>03-Design/09-navigationView.midas</semanticResources>
+    <semanticResources>03-Design/05-candidateActivitiesView.midas</semanticResources>
+    <semanticResources>03-Design/06-metaplanView.midas</semanticResources>
+    <semanticResources>03-Design/07-adaptedplanView.midas</semanticResources>
+    <semanticResources>02-Requirement/01-domainModel.midas</semanticResources>
+    <semanticResources>02-Requirement/02-requirementModel.midas</semanticResources>
     <semanticResources>generated/design/globalView.midas</semanticResources>
     <semanticResources>generated/design/ashyiView.midas</semanticResources>
     <semanticResources>generated/design/01-globalView.midas</semanticResources>
@@ -17,10 +30,18 @@
     <semanticResources>generated/design/02-ashyieduView.midas</semanticResources>
     <semanticResources>generated/design/1-ashyieduView.midas</semanticResources>
     <semanticResources>generated/design/1-globalView.midas</semanticResources>
+    <semanticResources>generated/design/0-globalView.midas</semanticResources>
     <semanticResources>generated/design/2-Plan.ProvisionView.midas</semanticResources>
     <semanticResources>generated/design/3-Plan.ExectutionView.midas</semanticResources>
     <semanticResources>generated/design/4-Student.Updating.ProfileView.midas</semanticResources>
     <semanticResources>generated/design/0-globalViews.midas</semanticResources>
+    <semanticResources>02-Requirement/02-requirementModel2.midas</semanticResources>
+    <semanticResources>generated/design/1-ashyi2View.midas</semanticResources>
+    <semanticResources>generated/design/2-StudentProfile.GenerationView.midas</semanticResources>
+    <semanticResources>generated/design/3-Plan.ProvisionView.midas</semanticResources>
+    <semanticResources>generated/design/4-Plan.ExectutionView.midas</semanticResources>
+    <semanticResources>generated/design/5-Plan.EvaluationView.midas</semanticResources>
+    <semanticResources>generated/design/6-Plan.Updating.ProfileView.midas</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_Ro1vIKEYEeaVpaNakAVM9w">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/co.edu.javeriana.midas.design/description/midas.odesign#//@ownedViewpoints[name='midas']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_ATLA4fN3EeamZNYpAuMT6g" name="Candidate activities" representation="_QevnoKElEeaWqLhC74d1YA">
