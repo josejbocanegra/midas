@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: co.edu.javeriana.midas
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: co.edu.javeriana.midas; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.emf.ecore,
+ org.eclipse.xtext.util,
+ org.antlr.runtime,
+ org.eclipse.xtend.lib,
+ org.eclipse.emf.common,
+ org.eclipse.xtext.xbase.lib,
+ org.eclipse.emf.mwe2.runtime,
+ org.apache.xmlrpc;bundle-version="3.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: co.edu.javeriana.midas.generator,
+ co.edu.javeriana.midas.scoping,
+ co.edu.javeriana.midas,
+ co.edu.javeriana.midas.services,
+ co.edu.javeriana.midas.midas.util,
+ co.edu.javeriana.midas.parser.antlr.internal,
+ co.edu.javeriana.midas.midas.impl,
+ co.edu.javeriana.midas.validation,
+ co.edu.javeriana.midas.parser.antlr,
+ co.edu.javeriana.midas.midas,
+ co.edu.javeriana.midas.serializer,
+ co.edu.javeriana.midas.formatting2
+Import-Package: org.apache.log4j
