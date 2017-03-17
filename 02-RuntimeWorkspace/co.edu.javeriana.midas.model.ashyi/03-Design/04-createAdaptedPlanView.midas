@@ -1,0 +1,19 @@
+Package Ashyi.createAdaptedPlanView;
+
+import Primitives.*;
+import Ashyi.domainModel.*;
+import Ashyi.candidateActivitiesView.*;
+import Ashyi.metaplanView.*;
+import Ashyi.adaptedplanView.*;
+
+function createAdaptedPlan2(in Student student, in Teacher teacher, in SystemContext context, out Plan adaptedPlan) {
+	List<Device> activities;
+	List<Device> candidateActivities;
+	Plan metaPlan;
+	
+	candidateActivities <- candidateActivities(teacher, activities);
+	
+	metaPlan <- metaPlan(candidateActivities);
+	
+	adaptedPlan <- adaptedPlan(student, context, metaPlan);
+}

@@ -1,0 +1,9 @@
+Package ASHYI2.ashyi2View;
+
+import Operations.*;
+
+/*TODO: define required imports*/
+
+function ashyi2(){
+	/*TODO: function behavior*/
+}

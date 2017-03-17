@@ -1,0 +1,8 @@
+Package StudentProfile.Generation.globalView;
+
+import Ashyi.domainModel.*; 
+
+function studentProfileGeneration(){
+	/* TODO: function behavior*/	
+	Student _student 
+}

@@ -1,0 +1,10 @@
+Package ASHYI2.globalView;
+
+import Operations.*;
+import ASHYI2.ashyi2View.*;
+
+function Main(){
+	/* TODO: Define required variables*/	
+	
+	ashyi2();
+}

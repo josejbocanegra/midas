@@ -1,0 +1,11 @@
+Package Ashyi.candidateActivitiesView;
+
+import Primitives.*;
+import Operations.*;
+import Ashyi.domainModel.*;
+
+function candidateActivities(in Teacher teacher, in List<Device> activities, out List<Device> candidateActivities) {
+	Query query;
+	query = "teacher.teachingGoal" match "activites.learningGoal"
+	candidateActivities <- filter(activities, query, teacher);
+}

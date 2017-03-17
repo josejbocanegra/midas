@@ -1,0 +1,8 @@
+Package Plan.Exectution.globalView;
+
+import Ashyi.domainModel.*; 
+
+function planExectution(){
+	/* TODO: function behavior*/	
+	Student _student 
+}

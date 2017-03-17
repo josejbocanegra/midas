@@ -1,0 +1,146 @@
+Package Ashyi.domainModel ;
+
+import Primitives.* ;
+
+Class StudentProfile{
+	
+}
+
+User Student {
+	String name
+	String ID
+	Date dateOfBirth
+	Place placeOfBirth
+}
+
+User SystemManager{
+	String name
+	String ID
+}
+
+User Teacher{
+	String teachingGoal
+}
+
+Class LearningStyle{
+	String name
+	String description
+}
+
+Class Personality{
+	String name
+	String description
+}
+
+Class Ability{
+	String name
+	String description
+}
+
+Class Capability{
+	String name
+	String description
+}
+
+Context SystemContext {
+	Boolean punctuality
+	Boolean lastTestAccomplishment
+	Place currentLocation
+}
+
+Class Device{
+	Double resolution
+	Integer screenWidth
+	Integer screenHeight
+	Connection connection
+	Integer memory
+	OperatingSystem operatingSystem
+} 
+
+Class Plan{
+	Graph ID
+}
+
+Class Test{
+	
+}
+
+Class AdaptedPlan{
+	List<Plan> adaptedPlan
+}
+
+Class LearningEvidence{
+	
+}
+
+Class Evaluation{
+	
+}
+
+Class Environment{
+	Place place
+	Date currentDate
+	
+}
+
+Class Policy{
+	String name
+	String description
+}
+
+Enum RecursivityLevel{
+	COURSE, TOPIC, DIDACTIC_UNIT, ACTIVITY
+}
+
+Enum ActivityLevel{
+	PRIMARY, SECUNDARY, TERTIARY
+}
+
+Enum ActivityClassification{
+	MACRO, ATOMIC, RECURSIVE
+}
+
+Enum ActivityType{
+	WORKSHOP, MAGISTRAL_CLASS, TEST
+}
+
+Class Activity{
+	String name
+	String description
+	RecursivityLevel recursivityLevel
+	Integer timeDedication
+	ActivityLevel activityLevel
+	List<String> learningGoal
+	ActivityClassification activityClassification
+	ActivityType activityType
+	List<String> preconditions
+	List<String> postconditions
+}
+
+Class Resorce{
+	String name
+	String description
+}
+
+Student ["0..*" : students] Student LearningStyle ["0..*" : learningStyles] LearningStyle learningStyle;
+Student ["0..*" : students] Student Personality["1..1" : personality] Personality personality;
+Student ["0..*" : students] Student Ability ["0..*" : abilities] Ability ability;
+Student ["0..*" : students] Student Capability ["0..*" : capabilities] Capability capability;
+Device ["0..*" : device] Device.Connection Connection ["1..1" : connection];
+Device ["0..*": device] Device.OperatingSystem OperatingSystem ["1..1" : operatingSystem];
+
+Activity ["0..*" : activity] actitivyresource Resorce ["1..*" : resource];
+
+SystemContext ["0..*" : systemcontexts] SystemContext Device ["1..*" : devices];
+SystemContext ["0..*" : systemcontext] SystemContext Environment ["1..*" : environments] Environment environment;
+SystemContext ["0..*" : systemcontext] SystemContext Policy ["1..*" : policies] Policy policy;
+
+
+Class Evaluation {
+}
+
+Student [ "*..*" : students ] Student Evaluation [ "0..*" : evaluations ] Evaluation evaluation;
+Class sdfsd {
+Policy name
+}
+
