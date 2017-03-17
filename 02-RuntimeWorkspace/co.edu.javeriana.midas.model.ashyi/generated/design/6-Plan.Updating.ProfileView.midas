@@ -1,7 +1,0 @@
-Package Plan.Updating.Profile.globalView;
-
-import Ashyi.domainModel.*; 
-
-function planUpdatingProfile(){
-	/* TODO: function behavior*/	
-}
