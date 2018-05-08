@@ -1,6 +1,0 @@
-Package Ashyi.presentationView;
-
-import Operations.*;
-import Ashyi.adaptationModel.*;
-
-function presentation() {}

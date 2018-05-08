@@ -1,7 +1,0 @@
-Package Plan.Provision.globalView;
-
-import Ashyi.domainModel.*; 
-
-function planProvision(){
-	/* TODO: function behavior*/	
-}
