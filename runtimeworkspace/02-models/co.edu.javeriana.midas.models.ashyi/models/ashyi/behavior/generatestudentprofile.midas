@@ -1,0 +1,9 @@
+package ashyi.behavior;
+
+import ashyi.structure.*;
+
+Behavior Model{
+	node generateStudentprofile (in  Test;out Student){
+		
+	}
+}

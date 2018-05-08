@@ -1,0 +1,14 @@
+package common.primitives;
+
+primitive String;
+primitive Date;
+primitive Integer;
+primitive Double;
+primitive Float;
+primitive Boolean;
+
+primitive Longitude;
+primitive Latitude;
+
+primitive List;
+

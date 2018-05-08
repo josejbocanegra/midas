@@ -1,0 +1,9 @@
+package student.behavior;
+
+import ashyi.structure.*;
+
+Behavior Model{
+	node improveKnowledgeLevel (out KnowledgeLevel){
+		
+	}
+}

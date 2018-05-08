@@ -1,0 +1,12 @@
+package touristic.behavior;
+
+import touristic.structure.*;
+import common.nodes.*;
+
+Behavior Model{
+	node provideAttraction (in currentLocation:Tourist.currentLocation;out attraction:Attraction){
+		pAttraction:attraction = common.nodes.filter(pLocation:currentLocation);
+	}
+}
+
+

@@ -1,0 +1,1374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:midas="http://www.edu.co/javeriana/midas/Midas" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis xmi:id="_2rLA4PubEee1gM7wy3gUHw" selectedViews="_T3O18PudEee1gM7wy3gUHw" version="12.1.0.201708031200">
+    <semanticResources>models/touristic/structure/structure.midas</semanticResources>
+    <semanticResources>models/touristic/requirements/requirements.midas</semanticResources>
+    <semanticResources>platform:/resource/co.edu.javeriana.midas.common/primitives/common/primitives/primitives.midas</semanticResources>
+    <semanticResources>models/touristic/behavior/recommendrestaurants.midas</semanticResources>
+    <semanticResources>models/touristic/behavior/gettouristattributes.midas</semanticResources>
+    <semanticResources>models/touristic/behavior/selectrestaurant.midas</semanticResources>
+    <semanticResources>platform:/resource/co.edu.javeriana.midas.common/common/common/primitives/primitives.midas</semanticResources>
+    <semanticResources>platform:/resource/co.edu.javeriana.midas.common/common/common/actions/actions.midas</semanticResources>
+    <semanticResources>models/ashyi/behavior/planvisit.midas</semanticResources>
+    <semanticResources>models/ashyi/behavior/provideattraction.midas</semanticResources>
+    <semanticResources>platform:/resource/co.edu.javeriana.midas.common/common/common/nodes/nodes.midas</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" xmi:id="_T3O18PudEee1gM7wy3gUHw">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_VRGy8PudEee1gM7wy3gUHw" name="new StructureModelView" repPath="#_VPKSMPudEee1gM7wy3gUHw">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']"/>
+        <target xmi:type="midas:Package" href="models/touristic/structure/structure.midas#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_jt-ggP-gEee0dtzc8GrczA" name="RecommendedRestaurantBehaviorModelView" repPath="#_jtyTQP-gEee0dtzc8GrczA">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']"/>
+        <target xmi:type="midas:BehaviorModel" href="models/touristic/behavior/recommendrestaurants.midas#//@subComponents.0"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_HuxKkAdqEeiZVs06YivGGQ" name="new RequirementSpecificationView2" repPath="#_HudokAdqEeiZVs06YivGGQ">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView2']"/>
+        <target xmi:type="midas:RequirementSpecification" href="models/touristic/requirements/requirements.midas#//@subComponents.0"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_uXRIcEJREeiOyqN_L401Ew" name="new BehaviorModelView" repPath="#_uW7xQEJREeiOyqN_L401Ew">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']"/>
+        <target xmi:type="midas:BehaviorModel" href="models/ashyi/behavior/provideattraction.midas#//@subComponents.0"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_ujIdIEfWEeinOLQbq83g9Q" name="new RequirementSpecificationView" repPath="#_uh0OgEfWEeinOLQbq83g9Q">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']"/>
+        <target xmi:type="midas:RequirementSpecification" href="models/touristic/requirements/requirements.midas#//@subComponents.0"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram xmi:id="_VREWsPudEee1gM7wy3gUHw" name="new StructureModelView" uid="_VPKSMPudEee1gM7wy3gUHw">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_VREWsfudEee1gM7wy3gUHw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_VREWsvudEee1gM7wy3gUHw"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_VRSZIPudEee1gM7wy3gUHw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_VRSZIfudEee1gM7wy3gUHw" type="Sirius" element="_VREWsPudEee1gM7wy3gUHw" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_cIEqwPudEee1gM7wy3gUHw" type="2003" element="_cH_yQPudEee1gM7wy3gUHw">
+          <children xmi:type="notation:Node" xmi:id="_cIEqw_udEee1gM7wy3gUHw" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_cIFR0PudEee1gM7wy3gUHw" type="7004">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_cIFR0fudEee1gM7wy3gUHw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_cIFR0vudEee1gM7wy3gUHw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_cIEqwfudEee1gM7wy3gUHw" fontName="Open Sans" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cIEqwvudEee1gM7wy3gUHw" x="-96" y="-48" width="824"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_cIFR0_udEee1gM7wy3gUHw" type="2003" element="_cIBncPudEee1gM7wy3gUHw">
+          <children xmi:type="notation:Node" xmi:id="_cIFR1vudEee1gM7wy3gUHw" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_cIF44PudEee1gM7wy3gUHw" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_sH0V4ACIEeieQugnQnwFoQ" type="3010" element="_sHRjUACIEeieQugnQnwFoQ">
+              <styles xmi:type="notation:FontStyle" xmi:id="_sH0V4QCIEeieQugnQnwFoQ" fontName="Open Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_sH0V4gCIEeieQugnQnwFoQ"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_OjkHQEJGEeiOyqN_L401Ew" type="3010" element="_OivA0EJGEeiOyqN_L401Ew">
+              <styles xmi:type="notation:FontStyle" xmi:id="_OjkHQUJGEeiOyqN_L401Ew" fontName="Open Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_OjkHQkJGEeiOyqN_L401Ew"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_OjkuUEJGEeiOyqN_L401Ew" type="3010" element="_Oiw2AEJGEeiOyqN_L401Ew">
+              <styles xmi:type="notation:FontStyle" xmi:id="_OjkuUUJGEeiOyqN_L401Ew" fontName="Open Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_OjkuUkJGEeiOyqN_L401Ew"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_je1yc07rEeiGhaR_f9DhUQ" type="3010" element="_jekFoE7rEeiGhaR_f9DhUQ">
+              <styles xmi:type="notation:FontStyle" xmi:id="_je1ydE7rEeiGhaR_f9DhUQ" fontName="Open Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_je1ydU7rEeiGhaR_f9DhUQ"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_cIF44fudEee1gM7wy3gUHw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_cIF44vudEee1gM7wy3gUHw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_cIFR1PudEee1gM7wy3gUHw" fontName="Open Sans" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cIFR1fudEee1gM7wy3gUHw" x="-96" height="91"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_yYOTUEHLEeii9YMCtAJHYw" type="2003" element="_yX90oEHLEeii9YMCtAJHYw">
+          <children xmi:type="notation:Node" xmi:id="_yYVBAEHLEeii9YMCtAJHYw" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_yYVBAUHLEeii9YMCtAJHYw" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_1g24MEHLEeii9YMCtAJHYw" type="3010" element="_1gwKgEHLEeii9YMCtAJHYw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_1g24MUHLEeii9YMCtAJHYw" fontName="Open Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_1g24MkHLEeii9YMCtAJHYw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_8EpVUEHLEeii9YMCtAJHYw" type="3010" element="_8Em5EEHLEeii9YMCtAJHYw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_8EpVUUHLEeii9YMCtAJHYw" fontName="Open Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_8EpVUkHLEeii9YMCtAJHYw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_8Ep8YEHLEeii9YMCtAJHYw" type="3010" element="_8EngIEHLEeii9YMCtAJHYw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_8Ep8YUHLEeii9YMCtAJHYw" fontName="Open Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_8Ep8YkHLEeii9YMCtAJHYw"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_yYVBAkHLEeii9YMCtAJHYw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_yYVBA0HLEeii9YMCtAJHYw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_yYOTUUHLEeii9YMCtAJHYw" fontName="Open Sans" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yYOTUkHLEeii9YMCtAJHYw" x="480" width="135" height="91"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_hUapoE7oEeiGhaR_f9DhUQ" type="2003" element="_hUPDcE7oEeiGhaR_f9DhUQ">
+          <children xmi:type="notation:Node" xmi:id="_hUce0E7oEeiGhaR_f9DhUQ" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_hUce0U7oEeiGhaR_f9DhUQ" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_hUeUAE7oEeiGhaR_f9DhUQ" type="3010" element="_hURfsE7oEeiGhaR_f9DhUQ">
+              <styles xmi:type="notation:FontStyle" xmi:id="_hUeUAU7oEeiGhaR_f9DhUQ" fontName="Open Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_hUeUAk7oEeiGhaR_f9DhUQ"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_hUe7EE7oEeiGhaR_f9DhUQ" type="3010" element="_hUSGwU7oEeiGhaR_f9DhUQ">
+              <styles xmi:type="notation:FontStyle" xmi:id="_hUe7EU7oEeiGhaR_f9DhUQ" fontName="Open Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_hUe7Ek7oEeiGhaR_f9DhUQ"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_hUe7E07oEeiGhaR_f9DhUQ" type="3010" element="_hUSt0E7oEeiGhaR_f9DhUQ">
+              <styles xmi:type="notation:FontStyle" xmi:id="_hUe7FE7oEeiGhaR_f9DhUQ" fontName="Open Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_hUe7FU7oEeiGhaR_f9DhUQ"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_hUce0k7oEeiGhaR_f9DhUQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_hUce007oEeiGhaR_f9DhUQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_hUapoU7oEeiGhaR_f9DhUQ" fontName="Open Sans" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hUapok7oEeiGhaR_f9DhUQ" x="83" width="112" height="91"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_je0kUE7rEeiGhaR_f9DhUQ" type="2003" element="_jeoXEE7rEeiGhaR_f9DhUQ">
+          <children xmi:type="notation:Node" xmi:id="_je0kU07rEeiGhaR_f9DhUQ" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_je0kVE7rEeiGhaR_f9DhUQ" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_je1ydk7rEeiGhaR_f9DhUQ" type="3010" element="_jeo-IU7rEeiGhaR_f9DhUQ">
+              <styles xmi:type="notation:FontStyle" xmi:id="_je1yd07rEeiGhaR_f9DhUQ" fontName="Open Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_je1yeE7rEeiGhaR_f9DhUQ"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_je1yeU7rEeiGhaR_f9DhUQ" type="3010" element="_jeplMU7rEeiGhaR_f9DhUQ">
+              <styles xmi:type="notation:FontStyle" xmi:id="_je1yek7rEeiGhaR_f9DhUQ" fontName="Open Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_je1ye07rEeiGhaR_f9DhUQ"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_je0kVU7rEeiGhaR_f9DhUQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_je0kVk7rEeiGhaR_f9DhUQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_je0kUU7rEeiGhaR_f9DhUQ" fontName="Open Sans" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_je0kUk7rEeiGhaR_f9DhUQ" x="336" width="135" height="91"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_je0kV07rEeiGhaR_f9DhUQ" type="2003" element="_jevEwE7rEeiGhaR_f9DhUQ">
+          <children xmi:type="notation:Node" xmi:id="_je1LYE7rEeiGhaR_f9DhUQ" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_je1LYU7rEeiGhaR_f9DhUQ" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_je2ZgE7rEeiGhaR_f9DhUQ" type="3010" element="_jewS4E7rEeiGhaR_f9DhUQ">
+              <styles xmi:type="notation:FontStyle" xmi:id="_je2ZgU7rEeiGhaR_f9DhUQ" fontName="Open Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_je2Zgk7rEeiGhaR_f9DhUQ"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_je2Zg07rEeiGhaR_f9DhUQ" type="3010" element="_jew58U7rEeiGhaR_f9DhUQ">
+              <styles xmi:type="notation:FontStyle" xmi:id="_je2ZhE7rEeiGhaR_f9DhUQ" fontName="Open Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_je2ZhU7rEeiGhaR_f9DhUQ"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_je2Zhk7rEeiGhaR_f9DhUQ" type="3010" element="_jexhAE7rEeiGhaR_f9DhUQ">
+              <styles xmi:type="notation:FontStyle" xmi:id="_je2Zh07rEeiGhaR_f9DhUQ" fontName="Open Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_je2ZiE7rEeiGhaR_f9DhUQ"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_je2ZiU7rEeiGhaR_f9DhUQ" type="3010" element="_jexhAk7rEeiGhaR_f9DhUQ">
+              <styles xmi:type="notation:FontStyle" xmi:id="_je2Zik7rEeiGhaR_f9DhUQ" fontName="Open Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_je2Zi07rEeiGhaR_f9DhUQ"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_je1LYk7rEeiGhaR_f9DhUQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_je1LY07rEeiGhaR_f9DhUQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_je0kWE7rEeiGhaR_f9DhUQ" fontName="Open Sans" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_je0kWU7rEeiGhaR_f9DhUQ" x="204"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_icI08E8PEeiGhaR_f9DhUQ" type="2003" element="_icASEE8PEeiGhaR_f9DhUQ">
+          <children xmi:type="notation:Node" xmi:id="_icJcAE8PEeiGhaR_f9DhUQ" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_icJcAU8PEeiGhaR_f9DhUQ" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_icKDFk8PEeiGhaR_f9DhUQ" type="3010" element="_icGYsk8PEeiGhaR_f9DhUQ">
+              <styles xmi:type="notation:FontStyle" xmi:id="_icKDF08PEeiGhaR_f9DhUQ" fontName="Open Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_icKDGE8PEeiGhaR_f9DhUQ"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_icKDEE8PEeiGhaR_f9DhUQ" type="3010" element="_icFxoE8PEeiGhaR_f9DhUQ">
+              <styles xmi:type="notation:FontStyle" xmi:id="_icKDEU8PEeiGhaR_f9DhUQ" fontName="Open Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_icKDEk8PEeiGhaR_f9DhUQ"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_icKqIE8PEeiGhaR_f9DhUQ" type="3010" element="_icGYtE8PEeiGhaR_f9DhUQ">
+              <styles xmi:type="notation:FontStyle" xmi:id="_icKqIU8PEeiGhaR_f9DhUQ" fontName="Open Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_icKqIk8PEeiGhaR_f9DhUQ"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_icKDE08PEeiGhaR_f9DhUQ" type="3010" element="_icGYsE8PEeiGhaR_f9DhUQ">
+              <styles xmi:type="notation:FontStyle" xmi:id="_icKDFE8PEeiGhaR_f9DhUQ" fontName="Open Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_icKDFU8PEeiGhaR_f9DhUQ"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_icJcAk8PEeiGhaR_f9DhUQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_icJcA08PEeiGhaR_f9DhUQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_icI08U8PEeiGhaR_f9DhUQ" fontName="Open Sans" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_icI08k8PEeiGhaR_f9DhUQ" x="624"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_TzZNcE8QEeiGhaR_f9DhUQ" type="2003" element="_TzVjEE8QEeiGhaR_f9DhUQ">
+          <children xmi:type="notation:Node" xmi:id="_TzZ0gE8QEeiGhaR_f9DhUQ" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_TzZ0gU8QEeiGhaR_f9DhUQ" type="7004">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_TzZ0gk8QEeiGhaR_f9DhUQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_TzZ0g08QEeiGhaR_f9DhUQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_TzZNcU8QEeiGhaR_f9DhUQ" fontName="Open Sans" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TzZNck8QEeiGhaR_f9DhUQ" x="12" y="132"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_TzZ0hE8QEeiGhaR_f9DhUQ" type="2003" element="_TzWKIE8QEeiGhaR_f9DhUQ">
+          <children xmi:type="notation:Node" xmi:id="_TzZ0h08QEeiGhaR_f9DhUQ" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_TzZ0iE8QEeiGhaR_f9DhUQ" type="7004">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_TzZ0iU8QEeiGhaR_f9DhUQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_TzZ0ik8QEeiGhaR_f9DhUQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_TzZ0hU8QEeiGhaR_f9DhUQ" fontName="Open Sans" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TzZ0hk8QEeiGhaR_f9DhUQ" x="-72" y="132"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_VRSZIvudEee1gM7wy3gUHw"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_cH_yQPudEee1gM7wy3gUHw" name="TourisTIC : Context-aware tourist application">
+      <target xmi:type="midas:System" href="models/touristic/structure/structure.midas#//@subComponents.0"/>
+      <semanticElements xmi:type="midas:System" href="models/touristic/structure/structure.midas#//@subComponents.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_cIBAYPudEee1gM7wy3gUHw" iconPath="/co.edu.javeriana.midas.designer/icons/system-icon.svg" borderSize="1" borderSizeComputationExpression="1" backgroundColor="194,239,255" foregroundColor="39,76,114">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='System']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='System']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_cIBncPudEee1gM7wy3gUHw" name="Tourist">
+      <target xmi:type="midas:User" href="models/touristic/structure/structure.midas#//@subComponents.1"/>
+      <semanticElements xmi:type="midas:User" href="models/touristic/structure/structure.midas#//@subComponents.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_cICOgPudEee1gM7wy3gUHw" iconPath="/co.edu.javeriana.midas.designer/icons/user-icon.svg" borderSize="1" borderSizeComputationExpression="1" backgroundColor="253,206,137" foregroundColor="224,133,3">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='User']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='User']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_sHRjUACIEeieQugnQnwFoQ" name="name : String">
+        <target xmi:type="midas:Attribute" href="models/touristic/structure/structure.midas#//@subComponents.1/@attributes.0"/>
+        <semanticElements xmi:type="midas:Attribute" href="models/touristic/structure/structure.midas#//@subComponents.1/@attributes.0"/>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_sHY4EACIEeieQugnQnwFoQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='User']/@subNodeMappings[name='Atrribute']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='User']/@subNodeMappings[name='Atrribute']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_OivA0EJGEeiOyqN_L401Ew" name="dateOfBirth : Date">
+        <target xmi:type="midas:Attribute" href="models/touristic/structure/structure.midas#//@subComponents.1/@attributes.1"/>
+        <semanticElements xmi:type="midas:Attribute" href="models/touristic/structure/structure.midas#//@subComponents.1/@attributes.1"/>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_OiwO8EJGEeiOyqN_L401Ew" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='User']/@subNodeMappings[name='Atrribute']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='User']/@subNodeMappings[name='Atrribute']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_Oiw2AEJGEeiOyqN_L401Ew" name="currentLocation : Location">
+        <target xmi:type="midas:Attribute" href="models/touristic/structure/structure.midas#//@subComponents.1/@attributes.2"/>
+        <semanticElements xmi:type="midas:Attribute" href="models/touristic/structure/structure.midas#//@subComponents.1/@attributes.2"/>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_OixdEEJGEeiOyqN_L401Ew" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='User']/@subNodeMappings[name='Atrribute']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='User']/@subNodeMappings[name='Atrribute']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_jekFoE7rEeiGhaR_f9DhUQ" name="dietPreference : DietPreference">
+        <target xmi:type="midas:Attribute" href="models/touristic/structure/structure.midas#//@subComponents.1/@attributes.3"/>
+        <semanticElements xmi:type="midas:Attribute" href="models/touristic/structure/structure.midas#//@subComponents.1/@attributes.3"/>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_jekFoU7rEeiGhaR_f9DhUQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='User']/@subNodeMappings[name='Atrribute']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='User']/@subNodeMappings[name='Atrribute']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_yX90oEHLEeii9YMCtAJHYw" name="Location">
+      <target xmi:type="midas:ContextEntity" href="models/touristic/structure/structure.midas#//@subComponents.2"/>
+      <semanticElements xmi:type="midas:ContextEntity" href="models/touristic/structure/structure.midas#//@subComponents.2"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_yYD7QEHLEeii9YMCtAJHYw" iconPath="/co.edu.javeriana.midas.designer/icons/contextentity-icon.svg" borderSize="1" borderSizeComputationExpression="1" backgroundColor="217,196,215" foregroundColor="114,73,110">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='ContextEntity']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='ContextEntity']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_1gwKgEHLEeii9YMCtAJHYw" name="latitude : Latitude">
+        <target xmi:type="midas:Attribute" href="models/touristic/structure/structure.midas#//@subComponents.2/@attributes.0"/>
+        <semanticElements xmi:type="midas:Attribute" href="models/touristic/structure/structure.midas#//@subComponents.2/@attributes.0"/>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_1gxYoEHLEeii9YMCtAJHYw" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='ContextEntity']/@subNodeMappings[name='Atrribute']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='ContextEntity']/@subNodeMappings[name='Atrribute']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_8Em5EEHLEeii9YMCtAJHYw" name="longitude : Longitude">
+        <target xmi:type="midas:Attribute" href="models/touristic/structure/structure.midas#//@subComponents.2/@attributes.1"/>
+        <semanticElements xmi:type="midas:Attribute" href="models/touristic/structure/structure.midas#//@subComponents.2/@attributes.1"/>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_8Em5EUHLEeii9YMCtAJHYw" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='ContextEntity']/@subNodeMappings[name='Atrribute']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='ContextEntity']/@subNodeMappings[name='Atrribute']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_8EngIEHLEeii9YMCtAJHYw" name="address : String">
+        <target xmi:type="midas:Attribute" href="models/touristic/structure/structure.midas#//@subComponents.2/@attributes.2"/>
+        <semanticElements xmi:type="midas:Attribute" href="models/touristic/structure/structure.midas#//@subComponents.2/@attributes.2"/>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_8EngIUHLEeii9YMCtAJHYw" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='ContextEntity']/@subNodeMappings[name='Atrribute']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='ContextEntity']/@subNodeMappings[name='Atrribute']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_hUPDcE7oEeiGhaR_f9DhUQ" name="Attraction">
+      <target xmi:type="midas:InformationItem" href="models/touristic/structure/structure.midas#//@subComponents.4"/>
+      <semanticElements xmi:type="midas:InformationItem" href="models/touristic/structure/structure.midas#//@subComponents.4"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_hUPqgE7oEeiGhaR_f9DhUQ" iconPath="/co.edu.javeriana.midas.designer/icons/informationitem-icon.svg" borderSize="1" borderSizeComputationExpression="1" backgroundColor="204,242,166" foregroundColor="77,137,20">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='InformationItem']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='InformationItem']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_hURfsE7oEeiGhaR_f9DhUQ" name="name : String">
+        <target xmi:type="midas:Attribute" href="models/touristic/structure/structure.midas#//@subComponents.4/@attributes.0"/>
+        <semanticElements xmi:type="midas:Attribute" href="models/touristic/structure/structure.midas#//@subComponents.4/@attributes.0"/>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_hUSGwE7oEeiGhaR_f9DhUQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='InformationItem']/@subNodeMappings[name='Atrribute']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='InformationItem']/@subNodeMappings[name='Atrribute']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_hUSGwU7oEeiGhaR_f9DhUQ" name="description : String">
+        <target xmi:type="midas:Attribute" href="models/touristic/structure/structure.midas#//@subComponents.4/@attributes.1"/>
+        <semanticElements xmi:type="midas:Attribute" href="models/touristic/structure/structure.midas#//@subComponents.4/@attributes.1"/>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_hUSGwk7oEeiGhaR_f9DhUQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='InformationItem']/@subNodeMappings[name='Atrribute']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='InformationItem']/@subNodeMappings[name='Atrribute']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_hUSt0E7oEeiGhaR_f9DhUQ" name="location : Location">
+        <target xmi:type="midas:Attribute" href="models/touristic/structure/structure.midas#//@subComponents.4/@attributes.2"/>
+        <semanticElements xmi:type="midas:Attribute" href="models/touristic/structure/structure.midas#//@subComponents.4/@attributes.2"/>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_hUSt0U7oEeiGhaR_f9DhUQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='InformationItem']/@subNodeMappings[name='Atrribute']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='InformationItem']/@subNodeMappings[name='Atrribute']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_jeoXEE7rEeiGhaR_f9DhUQ" name="DietPreference">
+      <target xmi:type="midas:ContextEntity" href="models/touristic/structure/structure.midas#//@subComponents.3"/>
+      <semanticElements xmi:type="midas:ContextEntity" href="models/touristic/structure/structure.midas#//@subComponents.3"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_jeo-IE7rEeiGhaR_f9DhUQ" iconPath="/co.edu.javeriana.midas.designer/icons/contextentity-icon.svg" borderSize="1" borderSizeComputationExpression="1" backgroundColor="217,196,215" foregroundColor="114,73,110">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='ContextEntity']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='ContextEntity']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_jeo-IU7rEeiGhaR_f9DhUQ" name="type : RestaurantType">
+        <target xmi:type="midas:Attribute" href="models/touristic/structure/structure.midas#//@subComponents.3/@attributes.0"/>
+        <semanticElements xmi:type="midas:Attribute" href="models/touristic/structure/structure.midas#//@subComponents.3/@attributes.0"/>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_jeplME7rEeiGhaR_f9DhUQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='ContextEntity']/@subNodeMappings[name='Atrribute']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='ContextEntity']/@subNodeMappings[name='Atrribute']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_jeplMU7rEeiGhaR_f9DhUQ" name="vegan : Boolean">
+        <target xmi:type="midas:Attribute" href="models/touristic/structure/structure.midas#//@subComponents.3/@attributes.1"/>
+        <semanticElements xmi:type="midas:Attribute" href="models/touristic/structure/structure.midas#//@subComponents.3/@attributes.1"/>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_jeqMQE7rEeiGhaR_f9DhUQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='ContextEntity']/@subNodeMappings[name='Atrribute']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='ContextEntity']/@subNodeMappings[name='Atrribute']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_jevEwE7rEeiGhaR_f9DhUQ" name="Restaurant">
+      <target xmi:type="midas:InformationItem" href="models/touristic/structure/structure.midas#//@subComponents.5"/>
+      <semanticElements xmi:type="midas:InformationItem" href="models/touristic/structure/structure.midas#//@subComponents.5"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_jevr0E7rEeiGhaR_f9DhUQ" iconPath="/co.edu.javeriana.midas.designer/icons/informationitem-icon.svg" borderSize="1" borderSizeComputationExpression="1" backgroundColor="204,242,166" foregroundColor="77,137,20">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='InformationItem']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='InformationItem']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_jewS4E7rEeiGhaR_f9DhUQ" name="name : String">
+        <target xmi:type="midas:Attribute" href="models/touristic/structure/structure.midas#//@subComponents.5/@attributes.0"/>
+        <semanticElements xmi:type="midas:Attribute" href="models/touristic/structure/structure.midas#//@subComponents.5/@attributes.0"/>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_jew58E7rEeiGhaR_f9DhUQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='InformationItem']/@subNodeMappings[name='Atrribute']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='InformationItem']/@subNodeMappings[name='Atrribute']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_jew58U7rEeiGhaR_f9DhUQ" name="type : RestaurantType">
+        <target xmi:type="midas:Attribute" href="models/touristic/structure/structure.midas#//@subComponents.5/@attributes.1"/>
+        <semanticElements xmi:type="midas:Attribute" href="models/touristic/structure/structure.midas#//@subComponents.5/@attributes.1"/>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_jew58k7rEeiGhaR_f9DhUQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='InformationItem']/@subNodeMappings[name='Atrribute']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='InformationItem']/@subNodeMappings[name='Atrribute']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_jexhAE7rEeiGhaR_f9DhUQ" name="vegan : Boolean">
+        <target xmi:type="midas:Attribute" href="models/touristic/structure/structure.midas#//@subComponents.5/@attributes.2"/>
+        <semanticElements xmi:type="midas:Attribute" href="models/touristic/structure/structure.midas#//@subComponents.5/@attributes.2"/>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_jexhAU7rEeiGhaR_f9DhUQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='InformationItem']/@subNodeMappings[name='Atrribute']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='InformationItem']/@subNodeMappings[name='Atrribute']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_jexhAk7rEeiGhaR_f9DhUQ" name="location : Location">
+        <target xmi:type="midas:Attribute" href="models/touristic/structure/structure.midas#//@subComponents.5/@attributes.3"/>
+        <semanticElements xmi:type="midas:Attribute" href="models/touristic/structure/structure.midas#//@subComponents.5/@attributes.3"/>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_jexhA07rEeiGhaR_f9DhUQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='InformationItem']/@subNodeMappings[name='Atrribute']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='InformationItem']/@subNodeMappings[name='Atrribute']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_icASEE8PEeiGhaR_f9DhUQ" name="RestaurantType">
+      <target xmi:type="midas:Enum" href="models/touristic/structure/structure.midas#//@subComponents.6"/>
+      <semanticElements xmi:type="midas:Enum" href="models/touristic/structure/structure.midas#//@subComponents.6"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_icA5IE8PEeiGhaR_f9DhUQ" iconPath="/co.edu.javeriana.midas.designer/icons/enumeration-icon.svg" borderSize="1" borderSizeComputationExpression="1" foregroundColor="217,196,215">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='Enumeration']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='Enumeration']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_icGYsk8PEeiGhaR_f9DhUQ" name="Italian">
+        <target xmi:type="midas:EnumItem" href="models/touristic/structure/structure.midas#//@subComponents.6/@enumItems.0"/>
+        <semanticElements xmi:type="midas:EnumItem" href="models/touristic/structure/structure.midas#//@subComponents.6/@enumItems.0"/>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_icGYs08PEeiGhaR_f9DhUQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='Enumeration']/@subNodeMappings[name='EnumItem']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='Enumeration']/@subNodeMappings[name='EnumItem']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_icFxoE8PEeiGhaR_f9DhUQ" name="Mexican">
+        <target xmi:type="midas:EnumItem" href="models/touristic/structure/structure.midas#//@subComponents.6/@enumItems.1"/>
+        <semanticElements xmi:type="midas:EnumItem" href="models/touristic/structure/structure.midas#//@subComponents.6/@enumItems.1"/>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_icFxoU8PEeiGhaR_f9DhUQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='Enumeration']/@subNodeMappings[name='EnumItem']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='Enumeration']/@subNodeMappings[name='EnumItem']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_icGYtE8PEeiGhaR_f9DhUQ" name="Chinesse">
+        <target xmi:type="midas:EnumItem" href="models/touristic/structure/structure.midas#//@subComponents.6/@enumItems.3"/>
+        <semanticElements xmi:type="midas:EnumItem" href="models/touristic/structure/structure.midas#//@subComponents.6/@enumItems.3"/>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_icGYtU8PEeiGhaR_f9DhUQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='Enumeration']/@subNodeMappings[name='EnumItem']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='Enumeration']/@subNodeMappings[name='EnumItem']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_icGYsE8PEeiGhaR_f9DhUQ" name="American">
+        <target xmi:type="midas:EnumItem" href="models/touristic/structure/structure.midas#//@subComponents.6/@enumItems.2"/>
+        <semanticElements xmi:type="midas:EnumItem" href="models/touristic/structure/structure.midas#//@subComponents.6/@enumItems.2"/>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_icGYsU8PEeiGhaR_f9DhUQ" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='Enumeration']/@subNodeMappings[name='EnumItem']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='Enumeration']/@subNodeMappings[name='EnumItem']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_TzVjEE8QEeiGhaR_f9DhUQ" name="Visit">
+      <target xmi:type="midas:InformationItem" href="models/touristic/structure/structure.midas#//@subComponents.7"/>
+      <semanticElements xmi:type="midas:InformationItem" href="models/touristic/structure/structure.midas#//@subComponents.7"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_TzVjEU8QEeiGhaR_f9DhUQ" iconPath="/co.edu.javeriana.midas.designer/icons/informationitem-icon.svg" borderSize="1" borderSizeComputationExpression="1" backgroundColor="204,242,166" foregroundColor="77,137,20">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='InformationItem']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='InformationItem']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_TzWKIE8QEeiGhaR_f9DhUQ" name="Vacation">
+      <target xmi:type="midas:InformationItem" href="models/touristic/structure/structure.midas#//@subComponents.8"/>
+      <semanticElements xmi:type="midas:InformationItem" href="models/touristic/structure/structure.midas#//@subComponents.8"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_TzWKIU8QEeiGhaR_f9DhUQ" iconPath="/co.edu.javeriana.midas.designer/icons/informationitem-icon.svg" borderSize="1" borderSizeComputationExpression="1" backgroundColor="204,242,166" foregroundColor="77,137,20">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='InformationItem']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='InformationItem']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_VREWtvudEee1gM7wy3gUHw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer"/>
+    <target xmi:type="midas:Package" href="models/touristic/structure/structure.midas#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram xmi:id="_jt7dMP-gEee0dtzc8GrczA" name="RecommendedRestaurantBehaviorModelView" uid="_jtyTQP-gEee0dtzc8GrczA">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_jt7dMf-gEee0dtzc8GrczA" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_jt7dMv-gEee0dtzc8GrczA"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_juIRgP-gEee0dtzc8GrczA" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_juIRgf-gEee0dtzc8GrczA" type="Sirius" element="_jt7dMP-gEee0dtzc8GrczA" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_juLU0P-gEee0dtzc8GrczA" type="2002" element="_jt7dNP-gEee0dtzc8GrczA">
+          <children xmi:type="notation:Node" xmi:id="_juO_MP-gEee0dtzc8GrczA" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_juO_Mf-gEee0dtzc8GrczA" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_kRSVoAa2EeibNbc1gHc6pg" type="3007" element="_kQ57IAa2EeibNbc1gHc6pg">
+              <children xmi:type="notation:Node" xmi:id="_kRYcQAa2EeibNbc1gHc6pg" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_kRYcQQa2EeibNbc1gHc6pg" x="7" y="-21"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_kRdUwAa2EeibNbc1gHc6pg" type="3001" element="_kQ-MkAa2EeibNbc1gHc6pg">
+                <children xmi:type="notation:Node" xmi:id="_kRdUwwa2EeibNbc1gHc6pg" type="5001">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_kRdUxAa2EeibNbc1gHc6pg" y="5"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_kRqJEAa2EeibNbc1gHc6pg" type="3005" element="_kQ-MkQa2EeibNbc1gHc6pg">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_kRqJEQa2EeibNbc1gHc6pg" fontName="Open Sans"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kRqJEga2EeibNbc1gHc6pg"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_kRdUwQa2EeibNbc1gHc6pg" fontName="Open Sans" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kRdUwga2EeibNbc1gHc6pg" x="-21" y="24" width="29" height="38"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_kRkCcAa2EeibNbc1gHc6pg" type="3001" element="_kQ-zoAa2EeibNbc1gHc6pg">
+                <children xmi:type="notation:Node" xmi:id="_kRlQkAa2EeibNbc1gHc6pg" type="5001">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_kRlQkQa2EeibNbc1gHc6pg" y="5"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_kRqJEwa2EeibNbc1gHc6pg" type="3005" element="_kQ_asAa2EeibNbc1gHc6pg">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_kRqJFAa2EeibNbc1gHc6pg" fontName="Open Sans"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kRqJFQa2EeibNbc1gHc6pg"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_kRkCcQa2EeibNbc1gHc6pg" fontName="Open Sans" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kRkCcga2EeibNbc1gHc6pg" x="92" y="24" width="28" height="24"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_kRpiAAa2EeibNbc1gHc6pg" type="3003" element="_kQ8XYAa2EeibNbc1gHc6pg">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_kRpiAQa2EeibNbc1gHc6pg" fontName="Open Sans"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kRpiAga2EeibNbc1gHc6pg"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_kRS8sAa2EeibNbc1gHc6pg" fontName="Open Sans" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kRS8sQa2EeibNbc1gHc6pg" x="91" y="90" width="100" height="100"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_kRcGoAa2EeibNbc1gHc6pg" type="3007" element="_kQ9lgAa2EeibNbc1gHc6pg">
+              <children xmi:type="notation:Node" xmi:id="_kRctsAa2EeibNbc1gHc6pg" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_kRctsQa2EeibNbc1gHc6pg" x="7" y="-21"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_kRqwIAa2EeibNbc1gHc6pg" type="3001" element="_kQ_asQa2EeibNbc1gHc6pg">
+                <children xmi:type="notation:Node" xmi:id="_kRqwIwa2EeibNbc1gHc6pg" type="5001">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_kRqwJAa2EeibNbc1gHc6pg" y="5"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_kRyr8wa2EeibNbc1gHc6pg" type="3005" element="_kQ_asga2EeibNbc1gHc6pg">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_kRyr9Aa2EeibNbc1gHc6pg" fontName="Open Sans"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kRyr9Qa2EeibNbc1gHc6pg"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_kRqwIQa2EeibNbc1gHc6pg" fontName="Open Sans" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kRqwIga2EeibNbc1gHc6pg" x="-20" y="24" width="28" height="36"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_kRuagAa2EeibNbc1gHc6pg" type="3001" element="_kRABwAa2EeibNbc1gHc6pg">
+                <children xmi:type="notation:Node" xmi:id="_kRvBkAa2EeibNbc1gHc6pg" type="5001">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_kRvBkQa2EeibNbc1gHc6pg" y="5"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_kRzTAAa2EeibNbc1gHc6pg" type="3005" element="_kRABwQa2EeibNbc1gHc6pg">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_kRzTAQa2EeibNbc1gHc6pg" fontName="Open Sans"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kRzTAga2EeibNbc1gHc6pg"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_kRuagQa2EeibNbc1gHc6pg" fontName="Open Sans" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kRuagga2EeibNbc1gHc6pg" x="92" y="29" width="26" height="33"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_kRyr8Aa2EeibNbc1gHc6pg" type="3003" element="_kQ9lgQa2EeibNbc1gHc6pg">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_kRyr8Qa2EeibNbc1gHc6pg" fontName="Open Sans"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kRyr8ga2EeibNbc1gHc6pg"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_kRcGoQa2EeibNbc1gHc6pg" fontName="Open Sans" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kRcGoga2EeibNbc1gHc6pg" x="295" y="90" width="100" height="100"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_juO_Mv-gEee0dtzc8GrczA"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_juO_M_-gEee0dtzc8GrczA"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_juQNUP-gEee0dtzc8GrczA" type="3012" element="_jt7dNf-gEee0dtzc8GrczA">
+            <children xmi:type="notation:Node" xmi:id="_juQ0YP-gEee0dtzc8GrczA" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_juQ0Yf-gEee0dtzc8GrczA" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_jyaUkP-gEee0dtzc8GrczA" type="3005" element="_jt7dNv-gEee0dtzc8GrczA">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_jyaUkf-gEee0dtzc8GrczA" fontName="Open Sans"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jyaUkv-gEee0dtzc8GrczA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_juQNUf-gEee0dtzc8GrczA" fontName="Open Sans" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_juQNUv-gEee0dtzc8GrczA" x="-30" y="72" width="38" height="25"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_jyS_0P-gEee0dtzc8GrczA" type="3012" element="_jt7dN_-gEee0dtzc8GrczA">
+            <children xmi:type="notation:Node" xmi:id="_jyS_0_-gEee0dtzc8GrczA" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_jyS_1P-gEee0dtzc8GrczA" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_jyaUk_-gEee0dtzc8GrczA" type="3005" element="_jt7dOP-gEee0dtzc8GrczA">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_jyaUlP-gEee0dtzc8GrczA" fontName="Open Sans"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jyaUlf-gEee0dtzc8GrczA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_jyS_0f-gEee0dtzc8GrczA" fontName="Open Sans" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jyS_0v-gEee0dtzc8GrczA" x="533" y="75" width="32" height="32"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_juLU0f-gEee0dtzc8GrczA" fontName="Open Sans" fontHeight="10" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_juLU0v-gEee0dtzc8GrczA" x="96" y="60" width="543" height="219"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_juIRgv-gEee0dtzc8GrczA"/>
+        <edges xmi:type="notation:Edge" xmi:id="_kR1IMAa2EeibNbc1gHc6pg" type="4001" element="_kRDFEAa2EeibNbc1gHc6pg" source="_juQNUP-gEee0dtzc8GrczA" target="_kRdUwAa2EeibNbc1gHc6pg">
+          <children xmi:type="notation:Node" xmi:id="_kR29YAa2EeibNbc1gHc6pg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kR29YQa2EeibNbc1gHc6pg" x="-7" y="-6"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_kR3kcAa2EeibNbc1gHc6pg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kR3kcQa2EeibNbc1gHc6pg" y="8"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_kR3kcga2EeibNbc1gHc6pg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kR3kcwa2EeibNbc1gHc6pg" x="2" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_kR1IMQa2EeibNbc1gHc6pg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_kR1IMga2EeibNbc1gHc6pg" fontName="Open Sans" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_kR1IMwa2EeibNbc1gHc6pg" points="[1, -2, -69, -40]$[19, -2, -51, -40]$[19, 38, -51, 0]$[70, 38, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gzRiIAdwEeixAfAafQpB4Q" id="(0.9210526315789473,0.6842105263157895)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_N6FbIAdbEeiLnveUuQ6jZA" id="(0.0,0.5789473684210527)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_kR_gQga2EeibNbc1gHc6pg" type="4001" element="_kRE6QAa2EeibNbc1gHc6pg" source="_kRkCcAa2EeibNbc1gHc6pg" target="_kRqwIAa2EeibNbc1gHc6pg">
+          <children xmi:type="notation:Node" xmi:id="_kSAHUAa2EeibNbc1gHc6pg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kSAHUQa2EeibNbc1gHc6pg" x="-22" y="-14"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_kSAHUga2EeibNbc1gHc6pg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kSAHUwa2EeibNbc1gHc6pg" x="-1" y="7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_kSAHVAa2EeibNbc1gHc6pg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kSAHVQa2EeibNbc1gHc6pg" x="-25" y="6"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_kR_gQwa2EeibNbc1gHc6pg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_kR_gRAa2EeibNbc1gHc6pg" fontName="Open Sans" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_kR_gRQa2EeibNbc1gHc6pg" points="[14, -1, -96, 3]$[106, -4, -4, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_UCKMoAdbEeiLnveUuQ6jZA" id="(0.5,0.5416666666666666)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_kSAuYQa2EeibNbc1gHc6pg" id="(1.1428571428571428,0.3055555555555556)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_kSAuYga2EeibNbc1gHc6pg" type="4001" element="_kRFhUAa2EeibNbc1gHc6pg" source="_kRuagAa2EeibNbc1gHc6pg" target="_jyS_0P-gEee0dtzc8GrczA">
+          <children xmi:type="notation:Node" xmi:id="_kSAuZga2EeibNbc1gHc6pg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kSAuZwa2EeibNbc1gHc6pg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_kSAuaAa2EeibNbc1gHc6pg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kSAuaQa2EeibNbc1gHc6pg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_kSAuaga2EeibNbc1gHc6pg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kSAuawa2EeibNbc1gHc6pg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_kSAuYwa2EeibNbc1gHc6pg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_kSAuZAa2EeibNbc1gHc6pg" fontName="Open Sans" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_kSAuZQa2EeibNbc1gHc6pg" points="[-4, -1, -139, 56]$[84, 0, -51, 57]$[84, -57, -51, 0]$[114, -57, -21, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_kSBVcAa2EeibNbc1gHc6pg" id="(1.0769230769230769,0.6666666666666666)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_k_N-IAdwEeixAfAafQpB4Q" id="(0.6875,0.3125)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_jt7dNP-gEee0dtzc8GrczA" name="recomendarRestaurantes">
+      <target xmi:type="midas:ComputationNodeDefinition" href="models/touristic/behavior/recommendrestaurants.midas#//@subComponents.0/@computationnodedefinitions.0"/>
+      <semanticElements xmi:type="midas:ComputationNodeDefinition" href="models/touristic/behavior/recommendrestaurants.midas#//@subComponents.0/@computationnodedefinitions.0"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_jt7dNf-gEee0dtzc8GrczA" outgoingEdges="_kRDFEAa2EeibNbc1gHc6pg" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="midas:PortDefinition" href="models/touristic/behavior/recommendrestaurants.midas#//@subComponents.0/@computationnodedefinitions.0/@inputPortDefinitions.0"/>
+        <semanticElements xmi:type="midas:PortDefinition" href="models/touristic/behavior/recommendrestaurants.midas#//@subComponents.0/@computationnodedefinitions.0/@inputPortDefinitions.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_jt7dNv-gEee0dtzc8GrczA" showIcon="false" labelPosition="node" workspacePath="/co.edu.javeriana.midas.designer/icons/inputport.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@borderedNodeMappings[name='GlobalInputPort']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@borderedNodeMappings[name='GlobalInputPort']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_jt7dN_-gEee0dtzc8GrczA" incomingEdges="_kRFhUAa2EeibNbc1gHc6pg" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="midas:PortDefinition" href="models/touristic/behavior/recommendrestaurants.midas#//@subComponents.0/@computationnodedefinitions.0/@outputPortDefinitions.0"/>
+        <semanticElements xmi:type="midas:PortDefinition" href="models/touristic/behavior/recommendrestaurants.midas#//@subComponents.0/@computationnodedefinitions.0/@outputPortDefinitions.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_jt7dOP-gEee0dtzc8GrczA" showIcon="false" labelPosition="node" workspacePath="/co.edu.javeriana.midas.designer/icons/outputport.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@borderedNodeMappings[name='GlobalOutputPort']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@borderedNodeMappings[name='GlobalOutputPort']"/>
+      </ownedBorderedNodes>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_jt7dOf-gEee0dtzc8GrczA" labelSize="10" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']"/>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_kQ57IAa2EeibNbc1gHc6pg" name="obtenerPreferenciasGastronomicas" width="10" height="10" resizeKind="NSEW">
+        <target xmi:type="midas:ComputationNode" href="models/touristic/behavior/recommendrestaurants.midas#//@subComponents.0/@computationnodedefinitions.0/@subComponents.0"/>
+        <semanticElements xmi:type="midas:ComputationNode" href="models/touristic/behavior/recommendrestaurants.midas#//@subComponents.0/@computationnodedefinitions.0/@subComponents.0"/>
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_kQ-MkAa2EeibNbc1gHc6pg" incomingEdges="_kRDFEAa2EeibNbc1gHc6pg" width="-1" height="-1" resizeKind="NSEW">
+          <target xmi:type="midas:Port" href="models/touristic/behavior/recommendrestaurants.midas#//@subComponents.0/@computationnodedefinitions.0/@subComponents.0/@inputPorts.0"/>
+          <semanticElements xmi:type="midas:Port" href="models/touristic/behavior/recommendrestaurants.midas#//@subComponents.0/@computationnodedefinitions.0/@subComponents.0/@inputPorts.0"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_kQ-MkQa2EeibNbc1gHc6pg" showIcon="false" labelPosition="node" workspacePath="/co.edu.javeriana.midas.designer/icons/inputport.svg">
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@subNodeMappings[name='ComputationNode']/@borderedNodeMappings[name='InputPort']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@subNodeMappings[name='ComputationNode']/@borderedNodeMappings[name='InputPort']"/>
+        </ownedBorderedNodes>
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_kQ-zoAa2EeibNbc1gHc6pg" outgoingEdges="_kRE6QAa2EeibNbc1gHc6pg" width="-1" height="-1" resizeKind="NSEW">
+          <target xmi:type="midas:Port" href="models/touristic/behavior/recommendrestaurants.midas#//@subComponents.0/@computationnodedefinitions.0/@subComponents.0/@outputPorts.0"/>
+          <semanticElements xmi:type="midas:Port" href="models/touristic/behavior/recommendrestaurants.midas#//@subComponents.0/@computationnodedefinitions.0/@subComponents.0/@outputPorts.0"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_kQ_asAa2EeibNbc1gHc6pg" showIcon="false" labelPosition="node" workspacePath="/co.edu.javeriana.midas.designer/icons/outputport.svg">
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@subNodeMappings[name='ComputationNode']/@borderedNodeMappings[name='OutputPort']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@subNodeMappings[name='ComputationNode']/@borderedNodeMappings[name='OutputPort']"/>
+        </ownedBorderedNodes>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_kQ8XYAa2EeibNbc1gHc6pg" showIcon="false" borderSize="2" borderSizeComputationExpression="2" color="224,133,3">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:SquareDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@subNodeMappings[name='ComputationNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@subNodeMappings[name='ComputationNode']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_kQ9lgAa2EeibNbc1gHc6pg" name="seleccionarRestaurantes" width="10" height="10" resizeKind="NSEW">
+        <target xmi:type="midas:ComputationNode" href="models/touristic/behavior/recommendrestaurants.midas#//@subComponents.0/@computationnodedefinitions.0/@subComponents.1"/>
+        <semanticElements xmi:type="midas:ComputationNode" href="models/touristic/behavior/recommendrestaurants.midas#//@subComponents.0/@computationnodedefinitions.0/@subComponents.1"/>
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_kQ_asQa2EeibNbc1gHc6pg" incomingEdges="_kRE6QAa2EeibNbc1gHc6pg" width="-1" height="-1" resizeKind="NSEW">
+          <target xmi:type="midas:Port" href="models/touristic/behavior/recommendrestaurants.midas#//@subComponents.0/@computationnodedefinitions.0/@subComponents.1/@inputPorts.0"/>
+          <semanticElements xmi:type="midas:Port" href="models/touristic/behavior/recommendrestaurants.midas#//@subComponents.0/@computationnodedefinitions.0/@subComponents.1/@inputPorts.0"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_kQ_asga2EeibNbc1gHc6pg" showIcon="false" labelPosition="node" workspacePath="/co.edu.javeriana.midas.designer/icons/inputport.svg">
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@subNodeMappings[name='ComputationNode']/@borderedNodeMappings[name='InputPort']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@subNodeMappings[name='ComputationNode']/@borderedNodeMappings[name='InputPort']"/>
+        </ownedBorderedNodes>
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_kRABwAa2EeibNbc1gHc6pg" outgoingEdges="_kRFhUAa2EeibNbc1gHc6pg" width="-1" height="-1" resizeKind="NSEW">
+          <target xmi:type="midas:Port" href="models/touristic/behavior/recommendrestaurants.midas#//@subComponents.0/@computationnodedefinitions.0/@subComponents.1/@outputPorts.0"/>
+          <semanticElements xmi:type="midas:Port" href="models/touristic/behavior/recommendrestaurants.midas#//@subComponents.0/@computationnodedefinitions.0/@subComponents.1/@outputPorts.0"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_kRABwQa2EeibNbc1gHc6pg" showIcon="false" labelPosition="node" workspacePath="/co.edu.javeriana.midas.designer/icons/outputport.svg">
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@subNodeMappings[name='ComputationNode']/@borderedNodeMappings[name='OutputPort']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@subNodeMappings[name='ComputationNode']/@borderedNodeMappings[name='OutputPort']"/>
+        </ownedBorderedNodes>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_kQ9lgQa2EeibNbc1gHc6pg" showIcon="false" borderSize="2" borderSizeComputationExpression="2" color="224,133,3">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:SquareDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@subNodeMappings[name='ComputationNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@subNodeMappings[name='ComputationNode']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_kRDFEAa2EeibNbc1gHc6pg" sourceNode="_jt7dNf-gEee0dtzc8GrczA" targetNode="_kQ-MkAa2EeibNbc1gHc6pg">
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_kRETMAa2EeibNbc1gHc6pg" targetArrow="NoDecoration" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@edgeMappings[name='Connection']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_kRETMQa2EeibNbc1gHc6pg"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@edgeMappings[name='Connection']"/>
+      <target xmi:type="midas:Connection" href="models/touristic/behavior/recommendrestaurants.midas#//@subComponents.0/@computationnodedefinitions.0/@subComponents.2"/>
+      <semanticElements xmi:type="midas:Connection" href="models/touristic/behavior/recommendrestaurants.midas#//@subComponents.0/@computationnodedefinitions.0/@subComponents.2"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_kRE6QAa2EeibNbc1gHc6pg" sourceNode="_kQ-zoAa2EeibNbc1gHc6pg" targetNode="_kQ_asQa2EeibNbc1gHc6pg">
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_kRE6QQa2EeibNbc1gHc6pg" targetArrow="NoDecoration" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@edgeMappings[name='Connection']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_kRE6Qga2EeibNbc1gHc6pg"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@edgeMappings[name='Connection']"/>
+      <target xmi:type="midas:Connection" href="models/touristic/behavior/recommendrestaurants.midas#//@subComponents.0/@computationnodedefinitions.0/@subComponents.3"/>
+      <semanticElements xmi:type="midas:Connection" href="models/touristic/behavior/recommendrestaurants.midas#//@subComponents.0/@computationnodedefinitions.0/@subComponents.3"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_kRFhUAa2EeibNbc1gHc6pg" sourceNode="_kRABwAa2EeibNbc1gHc6pg" targetNode="_jt7dN_-gEee0dtzc8GrczA">
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_kRFhUQa2EeibNbc1gHc6pg" targetArrow="NoDecoration" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@edgeMappings[name='Connection']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_kRFhUga2EeibNbc1gHc6pg"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@edgeMappings[name='Connection']"/>
+      <target xmi:type="midas:Connection" href="models/touristic/behavior/recommendrestaurants.midas#//@subComponents.0/@computationnodedefinitions.0/@subComponents.4"/>
+      <semanticElements xmi:type="midas:Connection" href="models/touristic/behavior/recommendrestaurants.midas#//@subComponents.0/@computationnodedefinitions.0/@subComponents.4"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_jt7dOv-gEee0dtzc8GrczA"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer"/>
+    <target xmi:type="midas:BehaviorModel" href="models/touristic/behavior/recommendrestaurants.midas#//@subComponents.0"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram xmi:id="_HuuuUAdqEeiZVs06YivGGQ" name="new RequirementSpecificationView2" uid="_HudokAdqEeiZVs06YivGGQ">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_HuuuUQdqEeiZVs06YivGGQ" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_HuuuUgdqEeiZVs06YivGGQ"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_Hu34QAdqEeiZVs06YivGGQ" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_Hu34QQdqEeiZVs06YivGGQ" type="Sirius" element="_HuuuUAdqEeiZVs06YivGGQ" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_Hu5GYAdqEeiZVs06YivGGQ" type="2001" element="_HuuuVAdqEeiZVs06YivGGQ">
+          <children xmi:type="notation:Node" xmi:id="_Hu8JsAdqEeiZVs06YivGGQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Hu8JsQdqEeiZVs06YivGGQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_HvSH8AdqEeiZVs06YivGGQ" type="3005" element="_HuuuVQdqEeiZVs06YivGGQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_HvSH8QdqEeiZVs06YivGGQ" fontName="Open Sans"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HvSH8gdqEeiZVs06YivGGQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_Hu5GYQdqEeiZVs06YivGGQ" fontName="Open Sans" fontHeight="8" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Hu5GYgdqEeiZVs06YivGGQ" x="168" y="48" width="100" height="25"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ZNnnEAdqEeiZVs06YivGGQ" type="2001" element="_ZNiHgAdqEeiZVs06YivGGQ">
+          <children xmi:type="notation:Node" xmi:id="_ZNnnEwdqEeiZVs06YivGGQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_ZNnnFAdqEeiZVs06YivGGQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ZNsfkAdqEeiZVs06YivGGQ" type="3005" element="_ZNiHgQdqEeiZVs06YivGGQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_ZNsfkQdqEeiZVs06YivGGQ" fontName="Open Sans"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZNsfkgdqEeiZVs06YivGGQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ZNnnEQdqEeiZVs06YivGGQ" fontName="Open Sans" fontHeight="8" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZNnnEgdqEeiZVs06YivGGQ" x="-36" y="36" width="100" height="25"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_Hu34QgdqEeiZVs06YivGGQ"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_HuuuVAdqEeiZVs06YivGGQ" name="tourisTIC" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="midas:Variable" href="models/touristic/requirements/requirements.midas#//@subComponents.0/@variables.0"/>
+      <semanticElements xmi:type="midas:Variable" href="models/touristic/requirements/requirements.midas#//@subComponents.0/@variables.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_HuuuVQdqEeiZVs06YivGGQ" showIcon="false" labelPosition="node" workspacePath="/co.edu.javeriana.midas.designer/icons/contextentity.svg">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView2']/@defaultLayer/@nodeMappings[name='System']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView2']/@defaultLayer/@nodeMappings[name='System']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_ZNiHgAdqEeiZVs06YivGGQ" name="tourist" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="midas:Variable" href="models/touristic/requirements/requirements.midas#//@subComponents.0/@variables.1"/>
+      <semanticElements xmi:type="midas:Variable" href="models/touristic/requirements/requirements.midas#//@subComponents.0/@variables.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_ZNiHgQdqEeiZVs06YivGGQ" showIcon="false" labelPosition="node" workspacePath="/co.edu.javeriana.midas.designer/icons/contextentity.svg">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView2']/@defaultLayer/@nodeMappings[name='User']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView2']/@defaultLayer/@nodeMappings[name='User']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView2']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_HuuuVgdqEeiZVs06YivGGQ"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView2']/@defaultLayer"/>
+    <target xmi:type="midas:RequirementSpecification" href="models/touristic/requirements/requirements.midas#//@subComponents.0"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram xmi:id="_uXOFIEJREeiOyqN_L401Ew" name="new BehaviorModelView" uid="_uW7xQEJREeiOyqN_L401Ew">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_uXOFIUJREeiOyqN_L401Ew" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_uXOFIkJREeiOyqN_L401Ew"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_uXZrUEJREeiOyqN_L401Ew" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_uXZrUUJREeiOyqN_L401Ew" type="Sirius" element="_uXOFIEJREeiOyqN_L401Ew" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_uXaSYEJREeiOyqN_L401Ew" type="2002" element="_uXOFJEJREeiOyqN_L401Ew">
+          <children xmi:type="notation:Node" xmi:id="_uXbggEJREeiOyqN_L401Ew" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_uXcuoEJREeiOyqN_L401Ew" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_XhT9AEJUEeiOyqN_L401Ew" type="3007" element="_XhRgwEJUEeiOyqN_L401Ew">
+              <children xmi:type="notation:Node" xmi:id="_XhUkEEJUEeiOyqN_L401Ew" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_XhUkEUJUEeiOyqN_L401Ew" x="7" y="-21"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_XhVyMEJUEeiOyqN_L401Ew" type="3003" element="_XhSH0EJUEeiOyqN_L401Ew">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_XhWZQEJUEeiOyqN_L401Ew" fontName="Open Sans"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XhWZQUJUEeiOyqN_L401Ew"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_ztrsIEJUEeiOyqN_L401Ew" type="3001" element="_ztpP4EJUEeiOyqN_L401Ew">
+                <children xmi:type="notation:Node" xmi:id="_ztsTMEJUEeiOyqN_L401Ew" type="5001">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_ztsTMUJUEeiOyqN_L401Ew" y="5"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_ztuIYEJUEeiOyqN_L401Ew" type="3005" element="_ztpP4UJUEeiOyqN_L401Ew">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_ztuIYUJUEeiOyqN_L401Ew" fontName="Open Sans"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ztuIYkJUEeiOyqN_L401Ew"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_ztrsIUJUEeiOyqN_L401Ew" fontName="Open Sans" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ztrsIkJUEeiOyqN_L401Ew" x="92" y="42" width="25" height="25"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_2WikwEJUEeiOyqN_L401Ew" type="3001" element="_2WfhcEJUEeiOyqN_L401Ew">
+                <children xmi:type="notation:Node" xmi:id="_2Wikw0JUEeiOyqN_L401Ew" type="5001">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_2WikxEJUEeiOyqN_L401Ew" y="5"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_2WlBAEJUEeiOyqN_L401Ew" type="3005" element="_2WgIgEJUEeiOyqN_L401Ew">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_2WlBAUJUEeiOyqN_L401Ew" fontName="Open Sans"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2WlBAkJUEeiOyqN_L401Ew"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_2WikwUJUEeiOyqN_L401Ew" fontName="Open Sans" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2WikwkJUEeiOyqN_L401Ew" x="-17" y="42" width="25" height="25"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_XhT9AUJUEeiOyqN_L401Ew" fontName="Open Sans" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XhT9AkJUEeiOyqN_L401Ew" x="79" y="77" width="100" height="100"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_uXcuoUJREeiOyqN_L401Ew"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_uXcuokJREeiOyqN_L401Ew"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_uXdVsEJREeiOyqN_L401Ew" type="3012" element="_uXOFJUJREeiOyqN_L401Ew">
+            <children xmi:type="notation:Node" xmi:id="_uXd8wEJREeiOyqN_L401Ew" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_uXd8wUJREeiOyqN_L401Ew" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_uX2-UEJREeiOyqN_L401Ew" type="3005" element="_uXOFJkJREeiOyqN_L401Ew">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_uX2-UUJREeiOyqN_L401Ew" fontName="Open Sans"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uX2-UkJREeiOyqN_L401Ew"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_uXdVsUJREeiOyqN_L401Ew" fontName="Open Sans" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uXdVskJREeiOyqN_L401Ew" x="-17" y="132" width="25" height="25"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_uXw3sEJREeiOyqN_L401Ew" type="3012" element="_uXOFJ0JREeiOyqN_L401Ew">
+            <children xmi:type="notation:Node" xmi:id="_uXxewEJREeiOyqN_L401Ew" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_uXxewUJREeiOyqN_L401Ew" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_uX2-U0JREeiOyqN_L401Ew" type="3005" element="_uXOFKEJREeiOyqN_L401Ew">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_uX2-VEJREeiOyqN_L401Ew" fontName="Open Sans"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uX2-VUJREeiOyqN_L401Ew"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_uXw3sUJREeiOyqN_L401Ew" fontName="Open Sans" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uXw3skJREeiOyqN_L401Ew" x="281" y="120" width="25" height="25"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_uXaSYUJREeiOyqN_L401Ew" fontName="Open Sans" fontHeight="10" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uXaSYkJREeiOyqN_L401Ew" x="36" y="24" width="291" height="219"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_uXZrUkJREeiOyqN_L401Ew"/>
+        <edges xmi:type="notation:Edge" xmi:id="_ztuIY0JUEeiOyqN_L401Ew" type="4001" element="_ztp28EJUEeiOyqN_L401Ew" source="_ztrsIEJUEeiOyqN_L401Ew" target="_uXw3sEJREeiOyqN_L401Ew">
+          <children xmi:type="notation:Node" xmi:id="_ztuvcEJUEeiOyqN_L401Ew" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ztuvcUJUEeiOyqN_L401Ew" x="1" y="-14"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ztuvckJUEeiOyqN_L401Ew" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ztuvc0JUEeiOyqN_L401Ew" x="2" y="3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ztuvdEJUEeiOyqN_L401Ew" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ztuvdUJUEeiOyqN_L401Ew" x="-4" y="4"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_ztuIZEJUEeiOyqN_L401Ew"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_ztuIZUJUEeiOyqN_L401Ew" fontName="Open Sans" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ztuIZkJUEeiOyqN_L401Ew" points="[8, -1, -109, 10]$[105, -1, -12, 10]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-XSIEEJUEeiOyqN_L401Ew" id="(0.0,0.72)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ztuvd0JUEeiOyqN_L401Ew" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_2WlBA0JUEeiOyqN_L401Ew" type="4001" element="_2WgvkEJUEeiOyqN_L401Ew" source="_2WikwEJUEeiOyqN_L401Ew" target="_uXdVsEJREeiOyqN_L401Ew">
+          <children xmi:type="notation:Node" xmi:id="_2WloEEJUEeiOyqN_L401Ew" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2WloEUJUEeiOyqN_L401Ew" x="-1" y="11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_2WloEkJUEeiOyqN_L401Ew" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2WloE0JUEeiOyqN_L401Ew" x="1" y="-2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_2WloFEJUEeiOyqN_L401Ew" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2WloFUJUEeiOyqN_L401Ew" x="6" y="-5"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_2WlBBEJUEeiOyqN_L401Ew"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_2WlBBUJUEeiOyqN_L401Ew" fontName="Open Sans" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2WlBBkJUEeiOyqN_L401Ew" points="[-20, 2, 72, -8]$[-79, 8, 13, -2]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2WmPIEJUEeiOyqN_L401Ew" id="(0.8,0.36)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2WmPIUJUEeiOyqN_L401Ew" id="(0.5,0.5)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_uXOFJEJREeiOyqN_L401Ew" name="provideAttraction">
+      <target xmi:type="midas:ComputationNodeDefinition" href="models/ashyi/behavior/provideattraction.midas#//@subComponents.0/@computationnodedefinitions.0"/>
+      <semanticElements xmi:type="midas:ComputationNodeDefinition" href="models/ashyi/behavior/provideattraction.midas#//@subComponents.0/@computationnodedefinitions.0"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_uXOFJUJREeiOyqN_L401Ew" incomingEdges="_2WgvkEJUEeiOyqN_L401Ew" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="midas:PortDefinition" href="models/ashyi/behavior/provideattraction.midas#//@subComponents.0/@computationnodedefinitions.0/@inputPortDefinitions.0"/>
+        <semanticElements xmi:type="midas:PortDefinition" href="models/ashyi/behavior/provideattraction.midas#//@subComponents.0/@computationnodedefinitions.0/@inputPortDefinitions.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_uXOFJkJREeiOyqN_L401Ew" showIcon="false" labelPosition="node" workspacePath="/co.edu.javeriana.midas.designer/icons/inputport3.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@borderedNodeMappings[name='GlobalInputPort']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@borderedNodeMappings[name='GlobalInputPort']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_uXOFJ0JREeiOyqN_L401Ew" incomingEdges="_ztp28EJUEeiOyqN_L401Ew" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="midas:PortDefinition" href="models/ashyi/behavior/provideattraction.midas#//@subComponents.0/@computationnodedefinitions.0/@outputPortDefinitions.0"/>
+        <semanticElements xmi:type="midas:PortDefinition" href="models/ashyi/behavior/provideattraction.midas#//@subComponents.0/@computationnodedefinitions.0/@outputPortDefinitions.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_uXOFKEJREeiOyqN_L401Ew" showIcon="false" labelPosition="node" workspacePath="/co.edu.javeriana.midas.designer/icons/outputport3.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@borderedNodeMappings[name='GlobalOutputPort']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@borderedNodeMappings[name='GlobalOutputPort']"/>
+      </ownedBorderedNodes>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_uXOFKUJREeiOyqN_L401Ew" labelSize="10" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']"/>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_XhRgwEJUEeiOyqN_L401Ew" name="filter" width="10" height="10" resizeKind="NSEW">
+        <target xmi:type="midas:ComputationNode" href="models/ashyi/behavior/provideattraction.midas#//@subComponents.0/@computationnodedefinitions.0/@subComponents.0"/>
+        <semanticElements xmi:type="midas:ComputationNode" href="models/ashyi/behavior/provideattraction.midas#//@subComponents.0/@computationnodedefinitions.0/@subComponents.0"/>
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_ztpP4EJUEeiOyqN_L401Ew" outgoingEdges="_ztp28EJUEeiOyqN_L401Ew" width="-1" height="-1" resizeKind="NSEW">
+          <target xmi:type="midas:Port" href="models/ashyi/behavior/provideattraction.midas#//@subComponents.0/@computationnodedefinitions.0/@subComponents.0/@outputPorts.0"/>
+          <semanticElements xmi:type="midas:Port" href="models/ashyi/behavior/provideattraction.midas#//@subComponents.0/@computationnodedefinitions.0/@subComponents.0/@outputPorts.0"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_ztpP4UJUEeiOyqN_L401Ew" showIcon="false" labelPosition="node" workspacePath="/co.edu.javeriana.midas.designer/icons/outputport3.svg">
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@subNodeMappings[name='ComputationNode']/@borderedNodeMappings[name='OutputPort']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@subNodeMappings[name='ComputationNode']/@borderedNodeMappings[name='OutputPort']"/>
+        </ownedBorderedNodes>
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_2WfhcEJUEeiOyqN_L401Ew" outgoingEdges="_2WgvkEJUEeiOyqN_L401Ew" width="-1" height="-1" resizeKind="NSEW">
+          <target xmi:type="midas:Port" href="models/ashyi/behavior/provideattraction.midas#//@subComponents.0/@computationnodedefinitions.0/@subComponents.0/@inputPorts.0"/>
+          <semanticElements xmi:type="midas:Port" href="models/ashyi/behavior/provideattraction.midas#//@subComponents.0/@computationnodedefinitions.0/@subComponents.0/@inputPorts.0"/>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_2WgIgEJUEeiOyqN_L401Ew" showIcon="false" labelPosition="node" workspacePath="/co.edu.javeriana.midas.designer/icons/inputport3.svg">
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@subNodeMappings[name='ComputationNode']/@borderedNodeMappings[name='InputPort']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@subNodeMappings[name='ComputationNode']/@borderedNodeMappings[name='InputPort']"/>
+        </ownedBorderedNodes>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_XhSH0EJUEeiOyqN_L401Ew" showIcon="false" borderSize="2" borderSizeComputationExpression="2" color="224,133,3">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:SquareDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@subNodeMappings[name='ComputationNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@subNodeMappings[name='ComputationNode']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_ztp28EJUEeiOyqN_L401Ew" sourceNode="_ztpP4EJUEeiOyqN_L401Ew" targetNode="_uXOFJ0JREeiOyqN_L401Ew">
+      <target xmi:type="midas:Port" href="models/ashyi/behavior/provideattraction.midas#//@subComponents.0/@computationnodedefinitions.0/@subComponents.0/@outputPorts.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_ztp28UJUEeiOyqN_L401Ew" targetArrow="NoDecoration" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@edgeMappings[name='Connection']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_ztp28kJUEeiOyqN_L401Ew"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@edgeMappings[name='Connection']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_2WgvkEJUEeiOyqN_L401Ew" sourceNode="_2WfhcEJUEeiOyqN_L401Ew" targetNode="_uXOFJUJREeiOyqN_L401Ew">
+      <target xmi:type="midas:Port" href="models/ashyi/behavior/provideattraction.midas#//@subComponents.0/@computationnodedefinitions.0/@subComponents.0/@inputPorts.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_2WgvkUJUEeiOyqN_L401Ew" targetArrow="NoDecoration" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@edgeMappings[name='Connection']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_2WgvkkJUEeiOyqN_L401Ew"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@edgeMappings[name='Connection']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_uXOFKkJREeiOyqN_L401Ew"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer"/>
+    <target xmi:type="midas:BehaviorModel" href="models/ashyi/behavior/provideattraction.midas#//@subComponents.0"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram xmi:id="_ujHPAEfWEeinOLQbq83g9Q" name="new RequirementSpecificationView" uid="_uh0OgEfWEeinOLQbq83g9Q">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_ujHPAUfWEeinOLQbq83g9Q" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_ujHPAkfWEeinOLQbq83g9Q"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_ujMukEfWEeinOLQbq83g9Q" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_ujMukUfWEeinOLQbq83g9Q" type="Sirius" element="_ujHPAEfWEeinOLQbq83g9Q" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_ujN8sEfWEeinOLQbq83g9Q" type="2002" element="_ujHPBEfWEeinOLQbq83g9Q">
+          <children xmi:type="notation:Node" xmi:id="_ujPx4EfWEeinOLQbq83g9Q" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_ujRAAEfWEeinOLQbq83g9Q" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_ujSOJEfWEeinOLQbq83g9Q" type="3007" element="_ujHPBkfWEeinOLQbq83g9Q">
+              <children xmi:type="notation:Node" xmi:id="_ujSOJ0fWEeinOLQbq83g9Q" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_ujSOKEfWEeinOLQbq83g9Q" x="-1"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_7MWAYEfWEei8DZ-oLTFViA" type="3005" element="_7DWccEfWEei8DZ-oLTFViA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_7MWAYUfWEei8DZ-oLTFViA" fontName="Open Sans"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7MWAYkfWEei8DZ-oLTFViA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_ujSOJUfWEeinOLQbq83g9Q" fontName="Open Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ujSOJkfWEeinOLQbq83g9Q" x="33" y="19" width="43" height="58"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_ujY70EfWEeinOLQbq83g9Q" type="3007" element="_ujHPCEfWEeinOLQbq83g9Q">
+              <children xmi:type="notation:Node" xmi:id="_ujZi4EfWEeinOLQbq83g9Q" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_ujZi4UfWEeinOLQbq83g9Q" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_ujbYEEfWEeinOLQbq83g9Q" type="3016" element="_ujHPCUfWEeinOLQbq83g9Q">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_ujbYEUfWEeinOLQbq83g9Q" fontName="Open Sans"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ujbYEkfWEeinOLQbq83g9Q"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_ujY70UfWEeinOLQbq83g9Q" fontName="Open Sans" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ujY70kfWEeinOLQbq83g9Q" x="141" y="76" width="133" height="97"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_ujRAAUfWEeinOLQbq83g9Q"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_ujRAAkfWEeinOLQbq83g9Q"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ujN8sUfWEeinOLQbq83g9Q" fontColor="16777215" fontName="Open Sans" fontHeight="8" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ujN8skfWEeinOLQbq83g9Q" x="12" y="84" width="422" height="277"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ujRnEEfWEeinOLQbq83g9Q" type="2002" element="_ujHPCkfWEeinOLQbq83g9Q">
+          <children xmi:type="notation:Node" xmi:id="_ujSOIEfWEeinOLQbq83g9Q" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_ujSOIUfWEeinOLQbq83g9Q" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_ujbYE0fWEeinOLQbq83g9Q" type="3007" element="_ujHPDEfWEeinOLQbq83g9Q">
+              <children xmi:type="notation:Node" xmi:id="_ujb_IEfWEeinOLQbq83g9Q" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_ujb_IUfWEeinOLQbq83g9Q" x="-1"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_ujlwIEfWEeinOLQbq83g9Q" type="3005" element="_ujHPDUfWEeinOLQbq83g9Q">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_ujlwIUfWEeinOLQbq83g9Q" fontName="Open Sans"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ujlwIkfWEeinOLQbq83g9Q"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_ujbYFEfWEeinOLQbq83g9Q" fontName="Open Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ujbYFUfWEeinOLQbq83g9Q" x="101" y="43" width="40" height="40"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_ujebYEfWEeinOLQbq83g9Q" type="3007" element="_ujHPDkfWEeinOLQbq83g9Q">
+              <children xmi:type="notation:Node" xmi:id="_ujebY0fWEeinOLQbq83g9Q" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_ujebZEfWEeinOLQbq83g9Q" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_ujmXMEfWEeinOLQbq83g9Q" type="3016" element="_ujHPD0fWEeinOLQbq83g9Q">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_ujmXMUfWEeinOLQbq83g9Q" fontName="Open Sans"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ujmXMkfWEeinOLQbq83g9Q"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_ujebYUfWEeinOLQbq83g9Q" fontName="Open Sans" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ujebYkfWEeinOLQbq83g9Q" x="248" y="32" width="143" height="85"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_X9mOwE7pEeiGhaR_f9DhUQ" type="3007" element="_X9gIIE7pEeiGhaR_f9DhUQ">
+              <children xmi:type="notation:Node" xmi:id="_X9nc4E7pEeiGhaR_f9DhUQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_X9nc4U7pEeiGhaR_f9DhUQ" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_X9sVYE7pEeiGhaR_f9DhUQ" type="3016" element="_X9gvME7pEeiGhaR_f9DhUQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_X9sVYU7pEeiGhaR_f9DhUQ" fontName="Open Sans"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_X9sVYk7pEeiGhaR_f9DhUQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_X9mOwU7pEeiGhaR_f9DhUQ" fontName="Open Sans" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_X9mOwk7pEeiGhaR_f9DhUQ" x="356" y="151" width="133" height="61"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_X9oD8E7pEeiGhaR_f9DhUQ" type="3007" element="_X9hWQE7pEeiGhaR_f9DhUQ">
+              <children xmi:type="notation:Node" xmi:id="_X9orAE7pEeiGhaR_f9DhUQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_X9orAU7pEeiGhaR_f9DhUQ" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_X9s8cE7pEeiGhaR_f9DhUQ" type="3005" element="_X9hWQU7pEeiGhaR_f9DhUQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_X9s8cU7pEeiGhaR_f9DhUQ" fontName="Open Sans"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_X9s8ck7pEeiGhaR_f9DhUQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_X9oD8U7pEeiGhaR_f9DhUQ" fontName="Open Sans" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_X9oD8k7pEeiGhaR_f9DhUQ" x="332" y="258" width="157" height="39"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_-SRqoE7pEeiGhaR_f9DhUQ" type="3007" element="_-SMyIE7pEeiGhaR_f9DhUQ">
+              <children xmi:type="notation:Node" xmi:id="_-SRqo07pEeiGhaR_f9DhUQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_-SRqpE7pEeiGhaR_f9DhUQ" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_-SUt8E7pEeiGhaR_f9DhUQ" type="3016" element="_-SMyIU7pEeiGhaR_f9DhUQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_-SUt8U7pEeiGhaR_f9DhUQ" fontName="Open Sans"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-SUt8k7pEeiGhaR_f9DhUQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_-SRqoU7pEeiGhaR_f9DhUQ" fontName="Open Sans" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-SRqok7pEeiGhaR_f9DhUQ" x="140" y="151" width="145" height="61"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_-SRqpU7pEeiGhaR_f9DhUQ" type="3007" element="_-SOAQE7pEeiGhaR_f9DhUQ">
+              <children xmi:type="notation:Node" xmi:id="_-SRqqE7pEeiGhaR_f9DhUQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_-SRqqU7pEeiGhaR_f9DhUQ" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_-SVVAE7pEeiGhaR_f9DhUQ" type="3005" element="_-SOAQU7pEeiGhaR_f9DhUQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_-SVVAU7pEeiGhaR_f9DhUQ" fontName="Open Sans"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-SVVAk7pEeiGhaR_f9DhUQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_-SRqpk7pEeiGhaR_f9DhUQ" fontName="Open Sans" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-SRqp07pEeiGhaR_f9DhUQ" x="164" y="260" width="145" height="36"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_ujSOIkfWEeinOLQbq83g9Q"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_ujSOI0fWEeinOLQbq83g9Q"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ujRnEUfWEeinOLQbq83g9Q" fontColor="16777215" fontName="Open Sans" fontHeight="8" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ujRnEkfWEeinOLQbq83g9Q" x="468" y="60" width="637" height="409"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_ujMukkfWEeinOLQbq83g9Q"/>
+        <edges xmi:type="notation:Edge" xmi:id="_X9uxoE7pEeiGhaR_f9DhUQ" type="4001" element="_X9ikYE7pEeiGhaR_f9DhUQ" source="_X9mOwE7pEeiGhaR_f9DhUQ" target="_X9oD8E7pEeiGhaR_f9DhUQ">
+          <children xmi:type="notation:Node" xmi:id="_X9v_wE7pEeiGhaR_f9DhUQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_X9v_wU7pEeiGhaR_f9DhUQ" x="-28" y="-34"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_X9wm0E7pEeiGhaR_f9DhUQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_X9wm0U7pEeiGhaR_f9DhUQ" x="8" y="-6"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_X9wm0k7pEeiGhaR_f9DhUQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_X9wm007pEeiGhaR_f9DhUQ" x="8" y="-6"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_X9uxoU7pEeiGhaR_f9DhUQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_X9uxok7pEeiGhaR_f9DhUQ" fontName="Open Sans" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_X9uxo07pEeiGhaR_f9DhUQ" points="[-3, 4, 43, -65]$[-34, 50, 12, -19]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_X9zDEE7pEeiGhaR_f9DhUQ" id="(0.5413533834586466,0.9344262295081968)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_X9zqIE7pEeiGhaR_f9DhUQ" id="(0.3184713375796178,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_-SVVA07pEeiGhaR_f9DhUQ" type="4001" element="_-SPOYE7pEeiGhaR_f9DhUQ" source="_-SRqoE7pEeiGhaR_f9DhUQ" target="_-SRqpU7pEeiGhaR_f9DhUQ">
+          <children xmi:type="notation:Node" xmi:id="_-SVVB07pEeiGhaR_f9DhUQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-SVVCE7pEeiGhaR_f9DhUQ" x="-12" y="21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_-SVVCU7pEeiGhaR_f9DhUQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-SVVCk7pEeiGhaR_f9DhUQ" x="-7" y="-1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_-SV8EE7pEeiGhaR_f9DhUQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-SV8EU7pEeiGhaR_f9DhUQ" x="-9" y="-3"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_-SVVBE7pEeiGhaR_f9DhUQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_-SVVBU7pEeiGhaR_f9DhUQ" fontName="Open Sans" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-SVVBk7pEeiGhaR_f9DhUQ" points="[0, 1, -13, -66]$[9, 49, -4, -18]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-SV8Ek7pEeiGhaR_f9DhUQ" id="(0.5724137931034483,0.9836065573770492)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_CwPqwE7qEeiGhaR_f9DhUQ" type="4001" element="_CwMncE7qEeiGhaR_f9DhUQ" source="_ujY70EfWEeinOLQbq83g9Q" target="_ujebYEfWEeinOLQbq83g9Q">
+          <children xmi:type="notation:Node" xmi:id="_CwQR0E7qEeiGhaR_f9DhUQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CwQR0U7qEeiGhaR_f9DhUQ" x="-4" y="-15"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_CwQR0k7qEeiGhaR_f9DhUQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CwQR007qEeiGhaR_f9DhUQ" y="6"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_CwQR1E7qEeiGhaR_f9DhUQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CwQR1U7qEeiGhaR_f9DhUQ" x="-7" y="7"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_CwPqwU7qEeiGhaR_f9DhUQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_CwPqwk7qEeiGhaR_f9DhUQ" fontName="Open Sans" fontHeight="8" bold="true"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_CwPqw07qEeiGhaR_f9DhUQ" points="[67, -9, -501, 65]$[497, -65, -71, 9]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_CwQR1k7qEeiGhaR_f9DhUQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_CwQR107qEeiGhaR_f9DhUQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_PClmIE7qEeiGhaR_f9DhUQ" type="4001" element="_PCeRYE7qEeiGhaR_f9DhUQ" source="_ujebYEfWEeinOLQbq83g9Q" target="_X9mOwE7pEeiGhaR_f9DhUQ">
+          <children xmi:type="notation:Node" xmi:id="_PCmNME7qEeiGhaR_f9DhUQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PCmNMU7qEeiGhaR_f9DhUQ" x="10" y="-26"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_PCmNMk7qEeiGhaR_f9DhUQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PCmNM07qEeiGhaR_f9DhUQ" x="36" y="9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_PCmNNE7qEeiGhaR_f9DhUQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PCmNNU7qEeiGhaR_f9DhUQ" x="4" y="7"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_PClmIU7qEeiGhaR_f9DhUQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_PClmIk7qEeiGhaR_f9DhUQ" fontName="Open Sans" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_PClmI07qEeiGhaR_f9DhUQ" points="[41, 43, -62, -64]$[74, 77, -29, -30]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PCmNNk7qEeiGhaR_f9DhUQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PCmNN07qEeiGhaR_f9DhUQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_PCmNOE7qEeiGhaR_f9DhUQ" type="4001" element="_PCjJ4E7qEeiGhaR_f9DhUQ" source="_ujebYEfWEeinOLQbq83g9Q" target="_-SRqoE7pEeiGhaR_f9DhUQ">
+          <children xmi:type="notation:Node" xmi:id="_PCmNPE7qEeiGhaR_f9DhUQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PCmNPU7qEeiGhaR_f9DhUQ" x="27" y="33"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_PCmNPk7qEeiGhaR_f9DhUQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PCmNP07qEeiGhaR_f9DhUQ" x="5" y="15"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_PCmNQE7qEeiGhaR_f9DhUQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PCmNQU7qEeiGhaR_f9DhUQ" x="5" y="16"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_PCmNOU7qEeiGhaR_f9DhUQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_PCmNOk7qEeiGhaR_f9DhUQ" fontName="Open Sans" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_PCmNO07qEeiGhaR_f9DhUQ" points="[-49, 43, 76, -67]$[-88, 77, 37, -33]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PCm0QE7qEeiGhaR_f9DhUQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PCm0QU7qEeiGhaR_f9DhUQ" id="(0.3758620689655172,0.5409836065573771)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_ujHPBEfWEeinOLQbq83g9Q">
+      <target xmi:type="midas:Requirement" href="models/touristic/requirements/requirements.midas#//@subComponents.0/@requirements.0"/>
+      <semanticElements xmi:type="midas:Requirement" href="models/touristic/requirements/requirements.midas#//@subComponents.0/@requirements.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_ujHPBUfWEeinOLQbq83g9Q" showIcon="false" labelColor="255,255,255" labelAlignment="LEFT" workspacePath="/co.edu.javeriana.midas.designer/icons/requirementspecification.svg">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@containerMappings[name='Requirement']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@containerMappings[name='Requirement']"/>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_ujHPBkfWEeinOLQbq83g9Q" name="Tourist" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="midas:User" href="models/touristic/structure/structure.midas#//@subComponents.1"/>
+        <semanticElements xmi:type="midas:User" href="models/touristic/structure/structure.midas#//@subComponents.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_7DWccEfWEei8DZ-oLTFViA" showIcon="false" workspacePath="/co.edu.javeriana.midas.designer/icons/user.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@containerMappings[name='Requirement']/@subNodeMappings[name='Actor']/@conditionnalStyles.0/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@containerMappings[name='Requirement']/@subNodeMappings[name='Actor']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_ujHPCEfWEeinOLQbq83g9Q" name="&lt;&lt;requirement>>&#x9;planVacation" outgoingEdges="_CwMncE7qEeiGhaR_f9DhUQ" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="midas:RequirementDescription" href="models/touristic/requirements/requirements.midas#//@subComponents.0/@requirements.0/@requirementsDescription.0"/>
+        <semanticElements xmi:type="midas:RequirementDescription" href="models/touristic/requirements/requirements.midas#//@subComponents.0/@requirements.0/@requirementsDescription.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_ujHPCUfWEeinOLQbq83g9Q" labelSize="9" showIcon="false" borderSize="1" borderSizeComputationExpression="1" labelPosition="node" color="194,239,255">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@containerMappings[name='Requirement']/@subNodeMappings[name='RequirementDescription']/@conditionnalStyles.0/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@containerMappings[name='Requirement']/@subNodeMappings[name='RequirementDescription']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_ujHPCkfWEeinOLQbq83g9Q">
+      <target xmi:type="midas:Requirement" href="models/touristic/requirements/requirements.midas#//@subComponents.0/@requirements.1"/>
+      <semanticElements xmi:type="midas:Requirement" href="models/touristic/requirements/requirements.midas#//@subComponents.0/@requirements.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_ujHPC0fWEeinOLQbq83g9Q" showIcon="false" labelColor="255,255,255" labelAlignment="LEFT" workspacePath="/co.edu.javeriana.midas.designer/icons/requirementspecification.svg">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@containerMappings[name='Requirement']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@containerMappings[name='Requirement']"/>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_ujHPDEfWEeinOLQbq83g9Q" name="TourisTIC" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="midas:System" href="models/touristic/structure/structure.midas#//@subComponents.0"/>
+        <semanticElements xmi:type="midas:System" href="models/touristic/structure/structure.midas#//@subComponents.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_ujHPDUfWEeinOLQbq83g9Q" showIcon="false" workspacePath="/co.edu.javeriana.midas.designer/icons/system.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@containerMappings[name='Requirement']/@subNodeMappings[name='Actor']/@conditionnalStyles.1/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@containerMappings[name='Requirement']/@subNodeMappings[name='Actor']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_ujHPDkfWEeinOLQbq83g9Q" name="&lt;&lt;requirement>>&#x9;planVisit" outgoingEdges="_PCeRYE7qEeiGhaR_f9DhUQ _PCjJ4E7qEeiGhaR_f9DhUQ" incomingEdges="_CwMncE7qEeiGhaR_f9DhUQ" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="midas:RequirementDescription" href="models/touristic/requirements/requirements.midas#//@subComponents.0/@requirements.1/@requirementsDescription.0"/>
+        <semanticElements xmi:type="midas:RequirementDescription" href="models/touristic/requirements/requirements.midas#//@subComponents.0/@requirements.1/@requirementsDescription.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_ujHPD0fWEeinOLQbq83g9Q" labelSize="9" showIcon="false" borderSize="1" borderSizeComputationExpression="1" labelPosition="node" color="194,239,255">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@containerMappings[name='Requirement']/@subNodeMappings[name='RequirementDescription']/@conditionnalStyles.0/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@containerMappings[name='Requirement']/@subNodeMappings[name='RequirementDescription']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_X9gIIE7pEeiGhaR_f9DhUQ" name="&lt;&lt;requirement>>&#x9;provideAttraction" outgoingEdges="_X9ikYE7pEeiGhaR_f9DhUQ" incomingEdges="_PCeRYE7qEeiGhaR_f9DhUQ" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="midas:RequirementDescription" href="models/touristic/requirements/requirements.midas#//@subComponents.0/@requirements.1/@requirementsDescription.1"/>
+        <semanticElements xmi:type="midas:RequirementDescription" href="models/touristic/requirements/requirements.midas#//@subComponents.0/@requirements.1/@requirementsDescription.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_X9gvME7pEeiGhaR_f9DhUQ" labelSize="9" showIcon="false" borderSize="1" borderSizeComputationExpression="1" labelPosition="node" color="194,239,255">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@containerMappings[name='Requirement']/@subNodeMappings[name='RequirementDescription']/@conditionnalStyles.0/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@containerMappings[name='Requirement']/@subNodeMappings[name='RequirementDescription']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_-SMyIE7pEeiGhaR_f9DhUQ" name="&lt;&lt;requirement>>&#x9;provideRestaurant" outgoingEdges="_-SPOYE7pEeiGhaR_f9DhUQ" incomingEdges="_PCjJ4E7qEeiGhaR_f9DhUQ" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="midas:RequirementDescription" href="models/touristic/requirements/requirements.midas#//@subComponents.0/@requirements.1/@requirementsDescription.2"/>
+        <semanticElements xmi:type="midas:RequirementDescription" href="models/touristic/requirements/requirements.midas#//@subComponents.0/@requirements.1/@requirementsDescription.2"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_-SMyIU7pEeiGhaR_f9DhUQ" labelSize="9" showIcon="false" borderSize="1" borderSizeComputationExpression="1" labelPosition="node" color="194,239,255">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@containerMappings[name='Requirement']/@subNodeMappings[name='RequirementDescription']/@conditionnalStyles.0/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@containerMappings[name='Requirement']/@subNodeMappings[name='RequirementDescription']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_X9hWQE7pEeiGhaR_f9DhUQ" name="Tourist.currentLocation" incomingEdges="_X9ikYE7pEeiGhaR_f9DhUQ" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="midas:Reference" href="models/touristic/requirements/requirements.midas#//@subComponents.0/@requirements.1/@requirementsDescription.1/@using.0"/>
+        <semanticElements xmi:type="midas:Reference" href="models/touristic/requirements/requirements.midas#//@subComponents.0/@requirements.1/@requirementsDescription.1/@using.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_X9hWQU7pEeiGhaR_f9DhUQ" showIcon="false" labelPosition="node" workspacePath="/co.edu.javeriana.midas.designer/icons/contextentity.svg">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@containerMappings[name='Requirement']/@subNodeMappings[name='ContextEntity']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@containerMappings[name='Requirement']/@subNodeMappings[name='ContextEntity']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_-SOAQE7pEeiGhaR_f9DhUQ" name="Tourist.dietPreference" incomingEdges="_-SPOYE7pEeiGhaR_f9DhUQ" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="midas:Reference" href="models/touristic/requirements/requirements.midas#//@subComponents.0/@requirements.1/@requirementsDescription.2/@using.0"/>
+        <semanticElements xmi:type="midas:Reference" href="models/touristic/requirements/requirements.midas#//@subComponents.0/@requirements.1/@requirementsDescription.2/@using.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_-SOAQU7pEeiGhaR_f9DhUQ" showIcon="false" labelPosition="node" workspacePath="/co.edu.javeriana.midas.designer/icons/contextentity.svg">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@containerMappings[name='Requirement']/@subNodeMappings[name='ContextEntity']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@containerMappings[name='Requirement']/@subNodeMappings[name='ContextEntity']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_X9ikYE7pEeiGhaR_f9DhUQ" name="using" sourceNode="_X9gIIE7pEeiGhaR_f9DhUQ" targetNode="_X9hWQE7pEeiGhaR_f9DhUQ">
+      <target xmi:type="midas:RequirementDescription" href="models/touristic/requirements/requirements.midas#//@subComponents.0/@requirements.1/@requirementsDescription.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_X9jLcE7pEeiGhaR_f9DhUQ" lineStyle="dash" size="3" strokeColor="77,137,20">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@edgeMappings[name='Using']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_X9jLcU7pEeiGhaR_f9DhUQ" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@edgeMappings[name='Using']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_-SPOYE7pEeiGhaR_f9DhUQ" name="using" sourceNode="_-SMyIE7pEeiGhaR_f9DhUQ" targetNode="_-SOAQE7pEeiGhaR_f9DhUQ">
+      <target xmi:type="midas:RequirementDescription" href="models/touristic/requirements/requirements.midas#//@subComponents.0/@requirements.1/@requirementsDescription.2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_-SPOYU7pEeiGhaR_f9DhUQ" lineStyle="dash" size="3" strokeColor="77,137,20">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@edgeMappings[name='Using']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_-SPOYk7pEeiGhaR_f9DhUQ" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@edgeMappings[name='Using']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_CwMncE7qEeiGhaR_f9DhUQ" name="depends on" sourceNode="_ujHPCEfWEeinOLQbq83g9Q" targetNode="_ujHPDkfWEeinOLQbq83g9Q">
+      <target xmi:type="midas:Relation" href="models/touristic/requirements/requirements.midas#//@subComponents.0/@relations.0"/>
+      <semanticElements xmi:type="midas:Relation" href="models/touristic/requirements/requirements.midas#//@subComponents.0/@relations.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_CwNOgE7qEeiGhaR_f9DhUQ" lineStyle="dot" targetArrow="InputFillClosedArrow" size="2" strokeColor="224,133,3">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@edgeMappings[name='Relation']/@conditionnalStyles.1/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_CwNOgU7qEeiGhaR_f9DhUQ" showIcon="false">
+          <labelFormat>bold</labelFormat>
+        </centerLabelStyle>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@edgeMappings[name='Relation']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_PCeRYE7qEeiGhaR_f9DhUQ" name="refined by" sourceNode="_ujHPDkfWEeinOLQbq83g9Q" targetNode="_X9gIIE7pEeiGhaR_f9DhUQ">
+      <target xmi:type="midas:Relation" href="models/touristic/requirements/requirements.midas#//@subComponents.0/@relations.1"/>
+      <semanticElements xmi:type="midas:Relation" href="models/touristic/requirements/requirements.midas#//@subComponents.0/@relations.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_PCeRYU7qEeiGhaR_f9DhUQ" size="2" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@edgeMappings[name='Relation']/@conditionnalStyles.0/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_PCeRYk7qEeiGhaR_f9DhUQ" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@edgeMappings[name='Relation']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_PCjJ4E7qEeiGhaR_f9DhUQ" name="refined by" sourceNode="_ujHPDkfWEeinOLQbq83g9Q" targetNode="_-SMyIE7pEeiGhaR_f9DhUQ">
+      <target xmi:type="midas:Relation" href="models/touristic/requirements/requirements.midas#//@subComponents.0/@relations.2"/>
+      <semanticElements xmi:type="midas:Relation" href="models/touristic/requirements/requirements.midas#//@subComponents.0/@relations.2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_PCjJ4U7qEeiGhaR_f9DhUQ" size="2" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@edgeMappings[name='Relation']/@conditionnalStyles.0/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_PCjJ4k7qEeiGhaR_f9DhUQ" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@edgeMappings[name='Relation']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_ujHPGEfWEeinOLQbq83g9Q"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/co.edu.javeriana.midas.designer/description/midas.odesign#//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer"/>
+    <target xmi:type="midas:RequirementSpecification" href="models/touristic/requirements/requirements.midas#//@subComponents.0"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

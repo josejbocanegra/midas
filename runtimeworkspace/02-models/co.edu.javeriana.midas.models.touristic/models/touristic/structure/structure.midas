@@ -1,0 +1,50 @@
+package touristic.structure;
+
+import common.primitives.*;
+
+system TourisTIC : "Context-aware tourist application"
+
+user Tourist{
+	String name
+	Date dateOfBirth
+	Location currentLocation
+	DietPreference dietPreference
+}
+
+context entity Location{
+	Latitude latitude
+	Longitude longitude
+	String address
+}
+
+context entity DietPreference{
+	RestaurantType type
+	Boolean vegan
+}
+
+information item Attraction{
+	String name
+	String description
+	Location location
+}
+
+information item Restaurant{
+	String name
+	RestaurantType type
+	Boolean vegan
+	Location location
+}
+
+enum RestaurantType{
+	Italian,
+	Mexican,
+	American,
+	Chinesse
+}
+
+information item Visit{}
+information item Vacation{}
+
+
+
+

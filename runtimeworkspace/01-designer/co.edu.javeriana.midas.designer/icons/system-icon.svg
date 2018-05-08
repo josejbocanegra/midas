@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="16"
+   height="16"
+   viewBox="0 0 12.8 12.8"
+   preserveAspectRatio="xMidYMid meet"
+   id="svg4155"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="system.svg">
+  <defs
+     id="defs4169" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="962"
+     id="namedview4167"
+     showgrid="false"
+     units="px"
+     inkscape:zoom="22.04078"
+     inkscape:cx="18.588683"
+     inkscape:cy="7.5657573"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4155" />
+  <metadata
+     id="metadata4157">
+Created by potrace 1.15, written by Peter Selinger 2001-2017
+<rdf:RDF>
+  <cc:Work
+     rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type
+       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:title></dc:title>
+  </cc:Work>
+</rdf:RDF>
+</metadata>
+  <g
+     transform="matrix(0.01305341,0,0,-0.01305341,0.21777835,12.50963)"
+     id="g4159"
+     style="fill:#000000;stroke:none">
+    <path
+       d="M 54,800 C 2,779 0,767 0,467 0,295 4,181 10,169 c 26,-47 43,-49 465,-49 422,0 439,2 465,49 6,12 10,127 10,300 l 0,280 -24,28 -24,28 -414,2 C 261,808 65,805 54,800 Z m 806,-335 0,-245 -385,0 -385,0 0,245 0,245 385,0 385,0 0,-245 z"
+       id="path4161"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 366,644 c -24,-23 -24,-335 0,-358 8,-9 22,-16 31,-16 14,0 253,184 253,194 0,11 -239,196 -253,196 -8,0 -23,-7 -31,-16 z"
+       id="path4163"
+       inkscape:connector-curvature="0" />
+    <path
+       d="M 172,84 C 157,73 150,59 150,34 l 0,-34 325,0 325,0 0,34 c 0,64 -9,66 -325,66 -238,0 -284,-2 -303,-16 z"
+       id="path4165"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

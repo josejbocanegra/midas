@@ -1,0 +1,102 @@
+package ashyi.structure;
+
+import common.primitives.*;
+
+system Ashyi:"Context-aware learning management system"
+
+user Student{
+	String name
+	Date dateOfBirth
+	Location currentLocation
+	LearningStyle learningStyle
+	Personality personality
+	Device device
+	Connection connection
+	KnowledgeLevel knowledgeLevel	
+}
+
+context entity LearningStyle{
+	String name
+	String description
+}
+ 
+context entity Personality{
+	String name
+	String description	
+}
+
+context entity Location{
+	Latitude latitude
+	Longitude longitude
+}
+
+context entity Device{
+	String brand
+	ScreenSize size
+	DeviceType deviceType
+	OperatingSystem operatingSystem	
+}
+
+context entity Connection{
+	String name
+	ConnectionType type
+	Double speed	
+}
+
+context entity KnowledgeLevel{
+	KnowledgeItem knowledgeItem
+	Integer	performance
+}
+
+context entity KnowledgeItem{
+	String name
+	String description	
+}
+
+information item AdaptedPlan{
+	List<Activity> activities
+}
+
+information item Test{
+	String description
+	String question
+	String answer
+	Device device
+}
+
+information item Question{
+	String question
+	String answer
+}
+
+information item Activity{
+	String goal
+	String description
+}
+
+information item Evaluation{
+	String description
+}
+
+enum DeviceType{
+	DESKTOP,
+	MOBILE
+}
+
+enum OperatingSystem{
+	iOS, 
+	Android  
+}
+
+enum ScreenSize{
+	SMALL,
+	MEDIUM,
+	LARGE
+}
+
+enum ConnectionType{
+	BROADBAND,
+	EDGE,
+	_3G,
+	_4G
+}

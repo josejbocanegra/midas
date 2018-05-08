@@ -1,0 +1,29 @@
+package touristic.requirements;
+
+import common.primitives.*;
+import common.actions.*;
+import touristic.structure.*;
+
+Requirements Specification {
+	Descriptions {
+		Tourist {
+			tourist.req1: shall plan Vacation
+		}
+		
+		TourisTIC {
+			touristic.req1: shall plan Visit
+			touristic.req2: shall provide Attraction using Tourist.currentLocation
+			touristic.req3: shall provide Restaurant using Tourist.dietPreference	
+		}	
+	}
+	
+	Relations {
+		 tourist.req1 depends on touristic.req1
+		 touristic.req1 is refined by touristic.req2
+		 touristic.req1 is refined by touristic.req3
+	}
+}
+
+
+
+

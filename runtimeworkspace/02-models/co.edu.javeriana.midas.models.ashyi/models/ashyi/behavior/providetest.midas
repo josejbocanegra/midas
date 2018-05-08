@@ -1,0 +1,12 @@
+package ashyi.behavior;
+
+import ashyi.structure.*;
+import common.nodes.*;
+
+Behavior Model{
+	node provideTest (in device:Student.device,
+		connection:Student.connection; out test:Test){
+		testAll=testAll();
+		t:test=filter(f:testAll, c:connection, d:device);
+	}
+}

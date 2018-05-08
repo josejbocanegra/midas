@@ -1,0 +1,43 @@
+package ashyi.requirements;
+
+import common.primitives.*;
+import common.actions.*;
+import ashyi.structure.*;
+
+Requirements Specification {
+	Descriptions{ 
+		Student {
+			student.req1: shall improve KnowledgeLevel
+			
+			student.req2: shall generate Evaluation using Activity 	
+		}
+		
+		Ashyi {
+			ashyi.req1: shall provide AdaptedPlan
+			 
+			ashyi.req2: shall provide Test  
+				using 	Student.device, Student.connection
+				
+			ashyi.req3: shall generate Student.profile 
+				using 	Test
+				
+			ashyi.req4: shall select Activity 
+				using 	Student.learningStyle, Student.personality, 
+						Student.connection, Student.device 
+			
+			ashyi.req5: shall update Student.profile
+				using 	Evaluation
+		}
+	}
+	
+	Relations{
+		student.req1 depends on ashyi.req1
+		student.req1 depends on ashyi.req3
+		
+		student.req1 is refined by student.req2
+		ashyi.req1 is refined by ashyi.req2
+		ashyi.req1 is refined by ashyi.req3
+		ashyi.req1 is refined by ashyi.req4
+		ashyi.req1 is refined by ashyi.req5
+	} 
+}

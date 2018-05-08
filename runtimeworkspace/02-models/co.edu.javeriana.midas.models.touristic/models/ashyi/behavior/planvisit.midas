@@ -1,0 +1,9 @@
+package tourist.behavior;
+
+import ashyi.structure.*;
+
+Behavior Model{
+	node planVisit (out Visit){
+		
+	}
+}

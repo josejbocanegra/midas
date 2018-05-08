@@ -1,0 +1,9 @@
+package ashyi.behavior;
+
+import ashyi.structure.*;
+
+Behavior Model{
+	node selectActivity (in  Student.learningStyle,Student.personality,Student.connection,Student.device;out Activity){
+		
+	}
+}

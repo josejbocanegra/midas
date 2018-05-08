@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:properties="http://www.eclipse.org/sirius/properties/1.0.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="midas" version="12.0.0.2017041100">
+  <ownedViewpoints name="midas" modelFileExtension="midas">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="StructureModelView" domainClass="midas.Package" enablePopupBars="true">
+      <metamodel href="http://www.edu.co/javeriana/midas/Midas#/"/>
+      <defaultLayer name="Default">
+        <edgeMappings name="Association" sourceMapping="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='ContextEntity'] //@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='InformationItem'] //@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='User']" targetMapping="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='ContextEntity'] //@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='InformationItem'] //@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='User']" targetFinderExpression="feature:target" sourceFinderExpression="feature:source" domainClass="midas.Association" useDomainElement="true">
+          <style targetArrow="NoDecoration" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <beginLabelStyleDescription showIcon="false" labelExpression="[ '[' + self.sourceCardinality + '] ' + self.sourceName/]">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </beginLabelStyleDescription>
+            <centerLabelStyleDescription showIcon="false" labelExpression="feature:name">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+            <endLabelStyleDescription showIcon="false" labelExpression="['[' + self.targetCardinality + '] ' + self.targetName/]">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </endLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <containerMappings name="System" labelDirectEdit="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@toolSections.0/@ownedTools[name='EditSystem']" semanticCandidatesExpression="aql:self.subComponents->filter(midas::System)" domainClass="midas.Class" childrenPresentation="List">
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.name + ' : ' + self.oclAsType(System).description/]" iconPath="/co.edu.javeriana.midas.designer/icons/system-icon.svg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="User" labelDirectEdit="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@toolSections.0/@ownedTools[name='EditElements']" semanticCandidatesExpression="aql:self.subComponents->filter(midas::User)" domainClass="midas.Class" childrenPresentation="List">
+          <subNodeMappings name="Atrribute" labelDirectEdit="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@toolSections.0/@ownedTools[name='EditAttribute']" semanticCandidatesExpression="feature:attributes" domainClass="midas.Attribute">
+            <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="[self.name + ' : ' + self.type.typespecification.name/]" labelAlignment="LEFT" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.name/]" iconPath="/co.edu.javeriana.midas.designer/icons/user-icon.svg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="ContextEntity" labelDirectEdit="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@toolSections.0/@ownedTools[name='EditElements']" semanticCandidatesExpression="aql:self.subComponents->filter(midas::ContextEntity)" domainClass="midas.Class" childrenPresentation="List">
+          <subNodeMappings name="Atrribute" labelDirectEdit="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@toolSections.0/@ownedTools[name='EditAttribute']" semanticCandidatesExpression="feature:attributes" domainClass="midas.Attribute">
+            <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="[self.name + ' : ' + self.type.typespecification.name/]" labelAlignment="LEFT" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.name/]" iconPath="/co.edu.javeriana.midas.designer/icons/contextentity-icon.svg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_purple']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_purple']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="InformationItem" labelDirectEdit="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@toolSections.0/@ownedTools[name='EditElements']" semanticCandidatesExpression="aql:self.subComponents->filter(midas::InformationItem)" domainClass="midas.Class" childrenPresentation="List">
+          <subNodeMappings name="Atrribute" labelDirectEdit="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@toolSections.0/@ownedTools[name='EditAttribute']" semanticCandidatesExpression="feature:attributes" domainClass="midas.Attribute">
+            <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="[self.name + ' : ' + self.type.typespecification.name/]" labelAlignment="LEFT" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="[self.name/]" iconPath="/co.edu.javeriana.midas.designer/icons/informationitem-icon.svg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="Enumeration" labelDirectEdit="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@toolSections.0/@ownedTools[name='EditElements']" semanticCandidatesExpression="feature:subComponents" domainClass="midas.CompositeTypeSpecification" childrenPresentation="List">
+          <subNodeMappings name="EnumItem" labelDirectEdit="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@toolSections.0/@ownedTools[name='EditEnumItem']" semanticCandidatesExpression="[self->selectByType(Enum).enumItems/]" domainClass="midas.EnumItem">
+            <style xsi:type="style:SquareDescription" showIcon="false" labelAlignment="LEFT" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" iconPath="/co.edu.javeriana.midas.designer/icons/enumeration-icon.svg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_purple']"/>
+          </style>
+        </containerMappings>
+        <toolSections name="Elements">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="System" containerMappings="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='System']" iconPath="/co.edu.javeriana.midas.designer/icons/system-icon.svg">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="midas.System" referenceName="subComponents"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="User" containerMappings="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='User']" iconPath="/co.edu.javeriana.midas.designer/icons/user-icon.svg">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="midas.User" referenceName="subComponents"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Context entity" containerMappings="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='ContextEntity']" iconPath="/co.edu.javeriana.midas.designer/icons/contextentity-icon.svg">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="midas.ContextEntity" referenceName="subComponents"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Information item" containerMappings="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='InformationItem']" iconPath="/co.edu.javeriana.midas.designer/icons/informationitem-icon.svg">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="midas.InformationItem" referenceName="subComponents"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Enumeration" containerMappings="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='Enumeration']" iconPath="/co.edu.javeriana.midas.designer/icons/enumeration-icon.svg">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="midas.Enum" referenceName="subComponents"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DirectEditLabel" name="EditAttribute">
+            <mask mask="{0}:{1}"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:self.trim(arg0)"/>
+                <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:self.type">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="typespecification" valueExpression="aql:self.getModelElement(arg1, 'TypeSpecification')"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DirectEditLabel" name="EditSystem">
+            <mask mask="{0}:{1}"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.oclAsType(System)/]">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:self.trim(arg0)"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="description" valueExpression="aql:self.trim(arg1)"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DirectEditLabel" name="EditElements">
+            <mask mask="{0}"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:self.trim(arg0)"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DirectEditLabel" name="EditEnumItem">
+            <mask mask="{0}"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:self.trim(arg0)"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+        <toolSections name="Relationships">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Association" edgeMappings="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@edgeMappings[name='Association']" iconPath="/co.edu.javeriana.midas.designer/icons/association-icon.svg">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.ancestors()->first()/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="midas.Association" referenceName="subComponents">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="source" valueExpression="var:source"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="target" valueExpression="var:target"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="sourceCardinality" valueExpression="*..*"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="targetCardinality" valueExpression="*..*"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="sourceName" valueExpression="sourceName"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="targetName" valueExpression="targetName"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="associationName"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+        <toolSections name="Attributes/Items">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Attibute" nodeMappings="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='ContextEntity']/@subNodeMappings[name='Atrribute'] //@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='InformationItem']/@subNodeMappings[name='Atrribute'] //@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='User']/@subNodeMappings[name='Atrribute']" iconPath="/co.edu.javeriana.midas.designer/icons/attribute-icon.svg">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="midas.Attribute" referenceName="attributes">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="name"/>
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:instance">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="midas.SimpleType" referenceName="type">
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="typespecification" valueExpression="aql:self.getModelElement('String', 'TypeSpecification')"/>
+                    </subModelOperations>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Enum Item" nodeMappings="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='StructureModelView']/@defaultLayer/@containerMappings[name='Enumeration']/@subNodeMappings[name='EnumItem']" iconPath="/co.edu.javeriana.midas.designer/icons/enumitem-icon.svg">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:container.oclAsType(midas::Enum)">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="midas::EnumItem" referenceName="enumItems">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="name"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="BehaviorModelView" domainClass="midas.BehaviorModel" enablePopupBars="true">
+      <metamodel href="http://www.edu.co/javeriana/midas/Midas#/"/>
+      <validationSet name="Validation"/>
+      <defaultLayer name="Default">
+        <edgeMappings name="Connection" sourceMapping="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@borderedNodeMappings[name='GlobalOutputPort'] //@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@subNodeMappings[name='ComputationNode']/@borderedNodeMappings[name='InputPort'] //@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@subNodeMappings[name='ComputationNode']/@borderedNodeMappings[name='OutputPort'] //@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@borderedNodeMappings[name='GlobalInputPort']" targetMapping="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@subNodeMappings[name='ComputationNode']/@borderedNodeMappings[name='OutputPort'] //@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@subNodeMappings[name='ComputationNode']/@borderedNodeMappings[name='InputPort'] //@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@borderedNodeMappings[name='GlobalInputPort'] //@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@borderedNodeMappings[name='GlobalOutputPort']" targetFinderExpression="feature:referencedPort">
+          <style targetArrow="NoDecoration" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <containerMappings name="ComputationNodeDefinition" semanticCandidatesExpression="feature:computationnodedefinitions" domainClass="midas.ComputationNodeDefinition">
+          <borderedNodeMappings name="GlobalInputPort" semanticCandidatesExpression="feature:inputPortDefinitions" domainClass="midas::PortDefinition">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/co.edu.javeriana.midas.designer/icons/inputport3.svg">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </borderedNodeMappings>
+          <borderedNodeMappings name="GlobalOutputPort" semanticCandidatesExpression="feature:outputPortDefinitions" domainClass="midas::PortDefinition">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/co.edu.javeriana.midas.designer/icons/outputport3.svg">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </borderedNodeMappings>
+          <subNodeMappings name="ComputationNode" semanticCandidatesExpression="feature:subComponents" domainClass="midas.ComputationNode">
+            <borderedNodeMappings name="InputPort" deletionDescription="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@toolSections.2/@ownedTools[name='Delete%20ports']" semanticCandidatesExpression="feature:inputPorts" domainClass="midas.Port">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/co.edu.javeriana.midas.designer/icons/inputport3.svg">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </borderedNodeMappings>
+            <borderedNodeMappings name="OutputPort" deletionDescription="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@toolSections.2/@ownedTools[name='Delete%20ports']" semanticCandidatesExpression="feature:outputPorts" domainClass="midas.Port">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/co.edu.javeriana.midas.designer/icons/outputport3.svg">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </borderedNodeMappings>
+            <style xsi:type="style:SquareDescription" borderSizeComputationExpression="2" showIcon="false" labelExpression="aql:self.callee.name" sizeComputationExpression="10" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelFormat>bold</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="10" showIcon="false">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+          </style>
+        </containerMappings>
+        <toolSections name="Nodes">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Node definition" precondition="aql:self.eContainer().eAllContents()->filter(midas::ComputationNodeDefinition)->size()=0" containerMappings="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']" iconPath="/co.edu.javeriana.midas.designer/icons/nodedefinition-icon.svg">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="midas::ComputationNodeDefinition" referenceName="computationnodedefinitions"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Node call" nodeMappings="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@subNodeMappings[name='ComputationNode']" iconPath="/co.edu.javeriana.midas.designer/icons/node-icon.svg">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="midas::ComputationNode" referenceName="subComponents"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+        <toolSections name="Connections">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Connection" iconPath="/co.edu.javeriana.midas.designer/icons/association-icon.svg">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[if (self.eContainer().oclIsKindOf(ComputationNodeDefinition)) then self.eContainer() else self.eContainer().eContainer() endif/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="midas::Connection" referenceName="subComponents">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="source" valueExpression="var:source"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="target" valueExpression="var:target"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+        <toolSections name="Predefined context-aware nodes">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Filter" nodeMappings="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='BehaviorModelView']/@defaultLayer/@containerMappings[name='ComputationNodeDefinition']/@subNodeMappings[name='ComputationNode']" iconPath="/co.edu.javeriana.midas.designer/icons/filter-icon.svg">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="midas.ComputationNode" referenceName="subComponents" variableName="instanceComputationNode">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="callee" valueExpression="aql:self.getModelElement('filter', 'ComputationNodeDefinition')"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="inputPortReferences" valueExpression="aql:self.getInputPortReferences()"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="outputPortReferences" valueExpression="aql:self.getOutputPortReferences()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="DeleteConnection">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:Unset" featureName="connectedPort"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:PopupMenu" name="Model actions">
+            <menuItemDescription xsi:type="tool_1:OperationAction" name="View definition">
+              <view name="views"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:self.openRepresentation()"/>
+              </initialOperation>
+            </menuItemDescription>
+            <menuItemDescription xsi:type="tool_1:OperationAction" name="Return to ancestor">
+              <view name="views"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:self.returnAncestor()"/>
+              </initialOperation>
+            </menuItemDescription>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="Delete ports">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation/>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="RequirementSpecificationView" domainClass="midas.RequirementSpecification" enablePopupBars="true">
+      <metamodel href="http://www.edu.co/javeriana/midas/Midas#/"/>
+      <defaultLayer name="Default">
+        <nodeMappings name="InformationItem" semanticCandidatesExpression="aql:self.variables->select(p | p.type.typespecification.oclIsKindOf(midas::InformationItem))" domainClass="midas.Variable">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/co.edu.javeriana.midas.designer/icons/informationitem.svg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="Relation" synchronizationLock="true" sourceMapping="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@containerMappings[name='Requirement']/@subNodeMappings[name='RequirementDescription']" targetMapping="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@containerMappings[name='Requirement']/@subNodeMappings[name='RequirementDescription']" targetFinderExpression="feature:target" sourceFinderExpression="feature:source" domainClass="midas.Relation" useDomainElement="true">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+          <conditionnalStyles predicateExpression="aql:self.type.equalsIgnoreCase('refined')">
+            <style sizeComputationExpression="2">
+              <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <centerLabelStyleDescription showIcon="false" labelExpression="['refined by'/]">
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </centerLabelStyleDescription>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:self.type.equalsIgnoreCase('depends')">
+            <style lineStyle="dot" targetArrow="InputFillClosedArrow" sizeComputationExpression="2">
+              <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
+              <centerLabelStyleDescription showIcon="false" labelExpression="['depends on'/]">
+                <labelFormat>bold</labelFormat>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </centerLabelStyleDescription>
+            </style>
+          </conditionnalStyles>
+        </edgeMappings>
+        <edgeMappings name="Using" sourceMapping="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@containerMappings[name='Requirement']/@subNodeMappings[name='RequirementDescription']" targetMapping="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@containerMappings[name='Requirement']/@subNodeMappings[name='ContextEntity']" targetFinderExpression="feature:using">
+          <style lineStyle="dash" sizeComputationExpression="3">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
+            <centerLabelStyleDescription showIcon="false" labelExpression="['using'/]">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="ToGenerate" sourceMapping="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@containerMappings[name='Requirement']/@subNodeMappings[name='RequirementDescription']" targetMapping="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@nodeMappings[name='InformationItem']" targetFinderExpression="feature:informationItem">
+          <style targetArrow="NoDecoration" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_chocolate']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <containerMappings name="Requirement" deletionDescription="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@toolSections.0/@ownedTools[name='DeleteRequirement']" semanticCandidatesExpression="feature:requirements" domainClass="midas.Requirement">
+          <subNodeMappings name="Actor" deletionDescription="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@toolSections.0/@ownedTools[name='DeleteActor']" semanticCandidatesExpression="feature:actor" domainClass="midas.Actor">
+            <style xsi:type="style:EllipseNodeDescription" borderSizeComputationExpression="2" labelSize="10" showIcon="false" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelFormat>bold</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+            </style>
+            <conditionnalStyles predicateExpression="aql:self.oclIsKindOf(midas::User)">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/co.edu.javeriana.midas.designer/icons/user.svg">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="aql:self.oclIsKindOf(midas::System)">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/co.edu.javeriana.midas.designer/icons/system.svg">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+          </subNodeMappings>
+          <subNodeMappings name="RequirementDescription" semanticCandidatesExpression="feature:requirementsDescription" domainClass="midas.RequirementDescription">
+            <style xsi:type="style:EllipseNodeDescription" showIcon="false" labelExpression="[self.name + ':' + self.action.name /]" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+            </style>
+            <conditionnalStyles predicateExpression="aql:self.modalVerb.equalsIgnoreCase('shall')">
+              <style xsi:type="style:EllipseNodeDescription" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="aql: if (self.toGenerate.attribute&lt;>null) then '&lt;&lt;requirement>>\t' + self.action.name+self.toGenerate.class.name + self.toGenerate.attribute.name else '&lt;&lt;requirement>>\t' + self.action.name + self.toGenerate.class.name endif " labelPosition="node" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelFormat>bold</labelFormat>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+              </style>
+            </conditionnalStyles>
+          </subNodeMappings>
+          <subNodeMappings name="ContextEntity" semanticCandidatesExpression="aql:self.requirementsDescription.using" domainClass="midas.Reference">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="aql: if (self.attribute&lt;>null) then self.class.name + '.' + self.attribute.name else self.class.name endif " sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/co.edu.javeriana.midas.designer/icons/contextentity.svg">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelFormat>bold</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" labelAlignment="LEFT" workspacePath="/co.edu.javeriana.midas.designer/icons/requirementspecification.svg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </style>
+        </containerMappings>
+        <toolSections name="RequirementsSection" label="Requirements">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="SpecificationCreation" label="Specification" containerMappings="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@containerMappings[name='Requirement']" iconPath="/co.edu.javeriana.midas.designer/icons/requirementspecification-icon.svg">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="midas.Requirement" referenceName="requirements" variableName="instance1">
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:instance1">
+                    <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="New requirement specification">
+                      <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                        <initialOperation/>
+                      </buttons>
+                      <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                        <initialOperation/>
+                      </buttons>
+                      <page name="Default Page" labelExpression="Select an actor" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@toolSections.0/@ownedTools[name='SpecificationCreation']/@initialOperation/@firstModelOperations/@subModelOperations.0/@subModelOperations.0/@subModelOperations.0/@groups.0"/>
+                      <groups name="Default Group" labelExpression="Available actors" domainClass="midas.Requirement" semanticCandidateExpression="var:self">
+                        <controls xsi:type="properties:SelectDescription" name="Actor" labelExpression="Name" valueExpression="aql:self.actor" candidatesExpression="aql:self.getVariables()" candidateDisplayExpression="aql:candidate.name">
+                          <initialOperation>
+                            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                              <subModelOperations xsi:type="tool_1:SetValue" featureName="actor" valueExpression="var:newValue"/>
+                            </firstModelOperations>
+                          </initialOperation>
+                        </controls>
+                      </groups>
+                    </subModelOperations>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="DeleteRequirement">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                <subModelOperations xsi:type="tool_1:RemoveElement"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="DeleteActor">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:DeleteView"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Shall" label="Requirement" nodeMappings="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@containerMappings[name='Requirement']/@subNodeMappings[name='RequirementDescription']" iconPath="/co.edu.javeriana.midas.designer/icons/shall-icon.svg">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="midas.RequirementDescription" referenceName="requirementsDescription">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="modalVerb" valueExpression="shall"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="name..."/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+        <toolSections name="DependencySection" label="Dependency/Refinement">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="DependencyCreation" label="Depends on" edgeMappings="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@edgeMappings[name='Relation']" iconPath="/co.edu.javeriana.midas.designer/icons/dependency-icon.svg">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:source.eContainer().eContainer()">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="midas.Refinement" referenceName="refinements">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="source" valueExpression="var:source"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="target" valueExpression="var:target"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="type" valueExpression="aql:self.setDependencyType('depends')"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="CertainlyCreation" label="Refined by" edgeMappings="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@edgeMappings[name='Relation']" iconPath="/co.edu.javeriana.midas.designer/icons/certainly-icon.svg">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:source.eContainer().eContainer()">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="midas.Relation" referenceName="relations">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="source" valueExpression="var:source"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="target" valueExpression="var:target"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="type" valueExpression="['refined'/]"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+        <toolSections name="Context/InformationSection" label="Context/Information">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="BasedOn" label="Based on" edgeMappings="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@edgeMappings[name='Using']" iconPath="/co.edu.javeriana.midas.designer/icons/basedon-icon.svg">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="contextEntity" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="ToGenerateCreation" label="To generate" edgeMappings="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@edgeMappings[name='ToGenerate']" iconPath="/co.edu.javeriana.midas.designer/icons/togenerate-icon.svg">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="informationItem" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="InformationItemCreation" label="Information Item" nodeMappings="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@nodeMappings[name='InformationItem']" iconPath="/co.edu.javeriana.midas.designer/icons/informationitem-icon.svg">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="midas::Variable" referenceName="variables">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="name"/>
+                  <subModelOperations xsi:type="tool_1:ChangeContext">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="midas.SimpleType" referenceName="type">
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="typespecification" valueExpression="aql:container.variables->select(p | p.type.typespecification.oclIsKindOf(midas::InformationItem))->first().type.typespecification"/>
+                    </subModelOperations>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="ContextEntityCreation" label="Context Entity" nodeMappings="//@ownedViewpoints[name='midas']/@ownedRepresentations[name='RequirementSpecificationView']/@defaultLayer/@containerMappings[name='Requirement']/@subNodeMappings[name='ContextEntity']" iconPath="/co.edu.javeriana.midas.designer/icons/contextentity-icon.svg">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="midas::Variable" referenceName="variables">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="name"/>
+                  <subModelOperations xsi:type="tool_1:ChangeContext">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="midas.SimpleType" referenceName="type">
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="typespecification" valueExpression="aql:container.variables->select(p | p.type.typespecification.oclIsKindOf(midas::ContextEntity))->first().type.typespecification"/>
+                    </subModelOperations>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="co.edu.javeriana.midas.design.Service"/>
+  </ownedViewpoints>
+  <extensions xsi:type="properties:ViewExtensionDescription" name="Properties">
+    <metamodels href="http://www.edu.co/javeriana/midas/Midas#/"/>
+    <categories name="Default">
+      <pages name="Default Page" labelExpression="Properties" semanticCandidateExpression="var:self" groups="//@extensions.0/@categories.0/@groups.1 //@extensions.0/@categories.0/@groups.0 //@extensions.0/@categories.0/@groups.2 //@extensions.0/@categories.0/@groups.3 //@extensions.0/@categories.0/@groups.4 //@extensions.0/@categories.0/@groups.5 //@extensions.0/@categories.0/@groups.6 //@extensions.0/@categories.0/@groups.7 //@extensions.0/@categories.0/@groups.8 //@extensions.0/@categories.0/@groups.9"/>
+      <groups name="PortDefinition" labelExpression="Type" domainClass="midas::PortDefinition" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties:SelectDescription" name="TypeSpec" labelExpression="Select type" valueExpression="aql:self.type.typespecification" candidatesExpression="aql:self.getTypeSpecification()" candidateDisplayExpression="aql:candidate.getAttributeName()">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+              <subModelOperations xsi:type="tool_1:Unset" featureName="type">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="midas.SimpleType" referenceName="type">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="typespecification" valueExpression="var:newValue"/>
+                </subModelOperations>
+              </subModelOperations>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:TextDescription" name="midas::PortDefinition name" labelExpression="Name" isEnabledExpression="aql:self.eClass().getEStructuralFeature('name').changeable" valueExpression="aql:self.name">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="var:newValue"/>
+          </initialOperation>
+        </controls>
+      </groups>
+      <groups name="ComputationNodeCall" labelExpression="Computation node call" domainClass="midas.ComputationNode" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties:SelectDescription" name="SelectNodes" labelExpression="Available nodes" valueExpression="aql:self.callee" candidatesExpression="aql:self.getAvalilableNodes()" candidateDisplayExpression="aql:candidate.getAttributeName()">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+              <subModelOperations xsi:type="tool_1:SetValue" featureName="callee" valueExpression="var:newValue"/>
+              <subModelOperations xsi:type="tool_1:SetValue" featureName="inputPorts" valueExpression="aql:self.getInputPortReferences()"/>
+              <subModelOperations xsi:type="tool_1:SetValue" featureName="outputPorts" valueExpression="aql:self.getOutputPortReferences()"/>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+      </groups>
+      <groups name="Variable-InformationItem" labelExpression="Information items properties" domainClass="midas.Variable" semanticCandidateExpression="var:self" preconditionExpression="aql:self.type.typespecification.oclIsKindOf(midas::InformationItem)">
+        <controls xsi:type="properties:SelectDescription" name="SelectType" labelExpression="Select an information item" valueExpression="aql:self.type.typespecification" candidatesExpression="aql:self.getTypeSpecification()->filter(midas::InformationItem)" candidateDisplayExpression="aql:candidate.getAttributeName()">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+              <subModelOperations xsi:type="tool_1:Unset" featureName="type">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="midas.SimpleType" referenceName="type">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="typespecification" valueExpression="var:newValue"/>
+                </subModelOperations>
+              </subModelOperations>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:TextDescription" name="Name" labelExpression="Name" valueExpression="aql:self.name">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+              <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="var:newValue"/>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+      </groups>
+      <groups name="Variable-ContextEntity" labelExpression="Context entity properties" domainClass="midas.Variable" semanticCandidateExpression="var:self" preconditionExpression="aql:self.type.typespecification.oclIsKindOf(midas::ContextEntity)">
+        <controls xsi:type="properties:SelectDescription" name="SelectType" labelExpression="Select a context entity" valueExpression="aql:self.type.typespecification" candidatesExpression="aql:self.getTypeSpecification()->filter(midas::ContextEntity)" candidateDisplayExpression="aql:candidate.getAttributeName()">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+              <subModelOperations xsi:type="tool_1:Unset" featureName="type">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="midas.SimpleType" referenceName="type">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="typespecification" valueExpression="var:newValue"/>
+                </subModelOperations>
+              </subModelOperations>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:TextDescription" name="Name" labelExpression="Name" valueExpression="aql:self.name">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+              <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="var:newValue"/>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+      </groups>
+      <groups name="RequirementDescriptiion" labelExpression="Requirement description" domainClass="midas.RequirementDescription" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties:TextDescription" name="Name" labelExpression="Name" valueExpression="aql:self.name">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+              <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="var:newValue"/>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+      </groups>
+      <groups name="Variable-Actor" labelExpression="Actor" domainClass="midas.Variable" semanticCandidateExpression="var:self" preconditionExpression="aql:self.type.typespecification.oclIsKindOf(midas::Actor)">
+        <controls xsi:type="properties:TextDescription" name="Name" labelExpression="Name" valueExpression="aql:self.name">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+              <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="var:newValue"/>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+      </groups>
+      <groups name="Class" labelExpression="Class properties" domainClass="midas.Class" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties:TextDescription" name="Name" labelExpression="Name" valueExpression="aql:self.name">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+              <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="var:newValue"/>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+      </groups>
+      <groups name="Enumeration" labelExpression="Enumeration properties" domainClass="midas.Enum" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties:TextDescription" name="Name" labelExpression="Name" valueExpression="aql:self.name">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+              <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="var:newValue"/>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+      </groups>
+      <groups name="Attribute" labelExpression="Attribute properties" domainClass="midas.Attribute" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties:TextDescription" name="Name" labelExpression="Name" valueExpression="aql:self.name">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+              <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="var:newValue"/>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:SelectDescription" name="Type" labelExpression="Select a type" valueExpression="aql:self.type.typespecification" candidatesExpression="aql:self.getTypeSpecification()" candidateDisplayExpression="aql:candidate.getAttributeName()">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+              <subModelOperations xsi:type="tool_1:Unset" featureName="type">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="midas.SimpleType" referenceName="type">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="typespecification" valueExpression="var:newValue"/>
+                </subModelOperations>
+              </subModelOperations>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+      </groups>
+      <groups name="EnumItem" labelExpression="Enumeration item properties" domainClass="midas.EnumItem" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties:TextDescription" name="Name" labelExpression="Name" valueExpression="aql:self.name">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+              <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="var:newValue"/>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+      </groups>
+    </categories>
+  </extensions>
+</description:Group>
