@@ -1,0 +1,144 @@
+[comment encoding = UTF-8 /]
+[module generate('http://www.edu.co/javeriana/midas/Midas')]
+
+[template public RM2BM(aRequirementModel : RequirementSpecification)]
+[comment @main/]
+	[for(aRequirement:Requirement | aRequirementModel.requirements)]
+		[comment [if( aRequirement.actor.oclIsKindOf(System))/] 
+			[for(aRequirementDescription:RequirementDescription | 
+				aRequirement.requirementsDescription)]
+				[file ('ashyi/behavior/' + aRequirementDescription.action.name + 
+				getNodeName(aRequirementDescription).toString().toLower() + '.midas', false, 'UTF-8')]
+package [aRequirement.actor.name.toLower()/].behavior;
+
+import ashyi.structure.*;
+
+Behavior Model{
+	node [aRequirementDescription.action.name + getNodeName(aRequirementDescription)/] ([CE2IP(aRequirementDescription)/][II2OP(aRequirementDescription)/]){
+		
+	}
+}
+				[/file]
+			[/for]
+		[comment [/if/]
+	[/for]
+[/template]
+
+[template public CE2IP (aRequirementDescription : RequirementDescription) post (replaceAll('\n|\t', '').trim())]
+	[if(aRequirementDescription.using->size()>0)]in  
+		[for(ref:Reference | aRequirementDescription.using)][ref.class.name/]
+			[if(ref.attribute<>null)].[ref.attribute.name/][/if]
+			[if(ref.profile<>null)].profile[/if]
+			[if(i<>aRequirementDescription.using->size())],[/if]
+		[/for];
+	[/if]
+[/template]
+
+[template public II2OP (aRequirementDescription : RequirementDescription) post (replaceAll('\n|\t', '').trim())]
+	[if(aRequirementDescription.toGenerate->size()>0)] out 
+		[for(ref:Reference | aRequirementDescription.toGenerate)][ref.class.name/]
+			[if(ref.attribute<>null)].[ref.attribute.name/][/if]
+			[if(ref.profile<>null)].profile[/if]
+			[if(i<>aRequirementDescription.toGenerate->size())],[/if]
+		[/for]
+	[/if]
+[/template]
+
+[template public getNodeName (aRequirementDescription : RequirementDescription) post (replaceAll('\n|\t', '').trim())]
+	[for(ref:Reference | aRequirementDescription.toGenerate)][ref.class.name/]
+		[if(ref.attribute<>null)]
+			[ref.attribute.name.toUpperFirst()/]
+		[/if]
+		[if(ref.profile<>null)]
+			profile
+		[/if]
+	[/for]
+[/template]
+
+[template public C2M(aClass : Class)]
+[comment @main/]
+[file ('ashyi/implementation/models/' + aClass.name + '.php', false, 'UTF-8')]
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class [aClass.name/] extends Model
+{
+    protected $table = '[aClass.name.toLower()/]';
+}
+[/file]
+
+[file ('ashyi/implementation/models/migrations/' + reqDate() + '_create_'+aClass.name + '_table.php', false, 'UTF-8')]
+<?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class Create[aClass.name/]Table extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('[aClass.name.toLower()/]', function (Blueprint $table) {
+            $table->increments('id');
+			[for(atr:Attribute | aClass.attributes)]
+			$table->string('[atr.name/]');
+			[/for]
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('[aClass.name.toLower()/]');
+    }
+}
+[/file]
+[/template]
+
+[template public C2C(aClass : Class)]
+[comment @main/]
+[file ('ashyi/implementation/controllers/' + aClass.name + 'Controller.php', false, 'UTF-8')]
+<?php
+
+namespace App\Http\Controllers;
+
+use App\[aClass.name/] as [aClass.name/];
+
+use Illuminate\Http\Request;
+
+class [aClass.name/]Controller extends Controller
+{
+    public function [aClass.name.toLower()/]All(){
+    	$[aClass.name.toLower()/] = [aClass.name/]::all(); 
+    	return $[aClass.name.toLower()/];
+    }
+
+	public function filter(){
+		$[aClass.name.toLower()/] = [aClass.name/]::where()->get();
+    	return $[aClass.name.toLower()/];
+	}
+}
+
+[/file]
+[/template]
+
+
+
+
+[query public reqDate(anOclAny : OclAny) : String = 
+	invoke('co.edu.javeriana.midas.generator.services.CommonServices', 'getDate()', Sequence{})
+/]
+

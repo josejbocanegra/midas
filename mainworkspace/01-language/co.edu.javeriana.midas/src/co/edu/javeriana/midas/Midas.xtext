@@ -1,0 +1,200 @@
+grammar co.edu.javeriana.midas.Midas with org.eclipse.xtext.common.Terminals
+
+import "http://www.edu.co/javeriana/midas/Midas"
+import "http://www.eclipse.org/emf/2002/Ecore" as ecore
+
+//=========================================================================
+//Main Components
+//=========================================================================
+Package:
+	{Package}
+	'package' name=QualifiedName ';'
+	imports+=Import*
+	subComponents+=Component*;
+
+Import returns Import:
+	{Import}
+	'import'
+	importedNamespace=QualifiedNameWithWildcard ';';
+
+Component returns Component:
+	RequirementSpecification | BehaviorModel |
+	Class_Impl | User | ContextEntity | InformationItem | System | Action |
+	ComputationNodeDefinition | ComputationNode |
+	Primitive | Enum |
+	Variable | Association;
+
+//=========================================================================
+//Structure Model View
+//========================================================================= 
+Class returns Class:
+	Class_Impl | User | InformationItem | ContextEntity;
+
+Class_Impl returns Class:
+	{Class}
+	'class' name=QualifiedName ('extends' superClass+=[Class|QualifiedName] (',' superClass+=[Class|QualifiedName])*)?
+	'{'
+	attributes+=Attribute*
+	'}';
+
+User returns User:
+	{User}
+	'user' name=QualifiedName
+	'{'
+	attributes+=Attribute*
+	'}';
+
+InformationItem returns InformationItem:
+	{InformationItem}
+	'information' 'item' name=QualifiedName
+	'{'
+	attributes+=Attribute*
+	'}';
+
+ContextEntity returns ContextEntity:
+	{ContextEntity}
+	'context' 'entity' name=QualifiedName
+	'{'
+	attributes+=Attribute*
+	'}';
+
+Attribute returns Attribute:
+	{Attribute}
+	type=Type name=QualifiedName;
+
+Action:
+	'action' name=QualifiedName;
+
+System returns System:
+	{System}
+	'system' name=QualifiedName ':' description=STRING;
+
+Enum:
+	'enum' name=QualifiedName '{' enumItems+=EnumItem (',' enumItems+=EnumItem)* '}';
+
+EnumItem:
+	name=QualifiedName;
+
+Association:
+	source=[Class] '[' sourceCardinality=STRING ':' sourceName=QualifiedName ']' name=QualifiedName target=[Class]
+	'[' targetCardinality=STRING ':' targetName=QualifiedName ']' ';';
+
+//=========================================================================	
+//Requirements Specification View
+//=========================================================================
+RequirementSpecification:
+	{RequirementSpecification}
+	'Requirements' 'Specification' '{'
+	'Descriptions' '{'
+	requirements+=Requirement*
+	'}'
+	'Relations' '{'
+	relations+=Relation*
+	'}'
+	'}';
+
+Relation:
+	source=[RequirementDescription|QualifiedName] (('is' type='refined' 'by') | (type='depends' 'on'))
+	target=[RequirementDescription|QualifiedName];
+
+Requirement:
+	actor=[Actor] '{'
+	requirementsDescription+=RequirementDescription*
+	'}';
+
+RequirementDescription:
+	name=QualifiedName ':' modalVerb='shall' action=[Action] toGenerate=Reference
+	('using' using+=Reference (',' using+=Reference)*)?;
+
+Reference:
+	class=[Class] ('.' (attribute=[Attribute] | profile='profile'))?;
+
+Variable returns Variable:
+	name=QualifiedName ':' type=Type ('=' value=Expression)? (';')?;
+
+//=========================================================================
+//Behavior Model View
+//========================================================================= 
+BehaviorModel:
+	{BehaviorModel}
+	'Behavior' 'Model' '{'
+	computationnodedefinitions+=ComputationNodeDefinition?
+	'}';
+
+ComputationNodeDefinition:
+	'node' name=QualifiedName
+	'('
+	('in' inputPortDefinitions+=PortDefinition (',' inputPortDefinitions+=PortDefinition)* ';')?
+	('out' outputPortDefinitions+=PortDefinition (',' outputPortDefinitions+=PortDefinition)*)?
+	')'
+	'{'
+	subComponents+=Component*
+	'}';
+
+PortDefinition:
+	name=QualifiedName (":" reference=Reference)?;
+
+Port:
+	name=QualifiedName (":" referencedPort=[PortReference])?;
+
+ComputationNode:
+	(outputPorts+=Port (',' outputPorts+=Port)* '=')? callee=[ComputationNodeDefinition|QualifiedName] '('
+	inputPorts+=Port? (',' inputPorts+=Port?)* ')' ';';
+
+//=========================================================================
+//Expressions
+//========================================================================= 
+Expression:
+	Negation ({BinaryOperator.left=current} (symbol='&&' | symbol="||") right=Negation)*;
+
+Negation returns Expression:
+	Comparison | {UnaryOperator} symbol='!' expression=Comparison;
+
+Comparison returns Expression:
+	Plus ({BinaryOperator.left=current} (symbol='<=' | symbol='>=' | symbol='>' | symbol='<' | symbol='!='
+	| symbol='==' | symbol='is' | symbol='as') right=Plus)*;
+
+Plus returns Expression:
+	Factor ({BinaryOperator.left=current} ('+' | '-') right=Factor)*;
+
+Factor returns Expression:
+	Negative ({BinaryOperator.left=current} ('*' | '/') right=Negative)*;
+
+Negative returns Expression:
+	Primary | {UnaryOperator} '-' expression=Primary;
+
+Primary returns Expression:
+	LiteralValue | '(' Expression ')';
+
+LiteralValue:
+	NumericValue | StringValue;
+
+NumericValue:
+	value=INT;
+
+StringValue:
+	value=STRING;
+
+//=========================================================================
+//Types View
+//========================================================================= 
+Type returns Type:
+	ParameterizedType | SimpleType;
+
+SimpleType returns SimpleType:
+	{SimpleType} typespecification=[TypeSpecification|QualifiedName];
+
+TypeSpecification returns TypeSpecification:
+	Primitive | Class;
+
+Primitive returns Primitive:
+	{Primitive} 'primitive' name=QualifiedName ';';
+
+ParameterizedType:
+	typespecification=[TypeSpecification|QualifiedName] => '<' typeParameters+=Type (',' typeParameters+=Type)* '>';
+
+QualifiedName:
+	ID ('.' ID)*;
+
+QualifiedNameWithWildcard:
+	QualifiedName '.*'; 

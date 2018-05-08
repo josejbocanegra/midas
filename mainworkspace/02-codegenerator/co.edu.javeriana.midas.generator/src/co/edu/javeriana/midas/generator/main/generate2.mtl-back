@@ -1,0 +1,223 @@
+[comment encoding = UTF-8 /]
+[module generate('http://www.edu.co/javeriana/midas/Midas')]
+
+[template public RequirementsModel2BehavioralModel(aRequirementModel : RequirementSpecification)]
+[comment @main/]
+[file ('pim/model/isml', false, 'UTF-8')]
+[/file]
+[/template]
+
+[comment][template public Class2Entity(aClass : Class)]
+[comment @main/]
+[file ('pim/model/' + aClass.name +'.isml', false, 'UTF-8')]
+package entities;
+
+entity [aClass.name/] {
+[for( aAttribute : Attribute | aClass.attributes)]
+	[if(aAttribute.type.typespecification.name.equalsIgnoreCase('List'))]
+	List<[aAttribute.type.oclAsType(ParameterizedType).typeParameters->first().typespecification.name/]> [aAttribute.name/];
+	[else]
+	[aAttribute.type.typespecification.name/] [aAttribute.name/];
+	[/if]
+[/for]
+}
+[/file]
+[/template]
+
+[template public Enum2Entity(aEnum : Enum)]
+[comment @main/]
+[file ('pim/model/' + aEnum.name +'.isml', false, 'UTF-8')]
+package entities;
+
+enum [aEnum.name/] {
+[for(aItem : EnumItem | aEnum.enumItems)]
+	[aItem.name.toLower()/][if(i<>aEnum.enumItems->size())],[/if]
+[/for]
+}
+[/file]
+[/template]
+
+[template public RM2CND(aRequirementModel : RequirementModel)]
+[file ('core/operations.midas', false, 'UTF-8')]
+package operations;
+
+[for (aVariable : Variable  | aRequirementModel.requirements.inputVars->asOrderedSet() - aRequirementModel.requirements.outputVars->asSet())]
+node get[aVariable.name.toUpperFirst()/](){} 
+[/for]
+[/file]
+ 
+[file ('03-BehavioralModel/global.midas', false, 'UTF-8')]
+package globalView;
+
+import structuralModel.*;
+import operations.*;
+
+[aRequirementModel.getImports()/]
+node Main(){
+	
+	//Global vars
+	[for (aVariable : Variable  | aRequirementModel.requirements.inputVars->asOrderedSet() - aRequirementModel.requirements.outputVars->asSet())]
+	[aVariable.name/] = get[aVariable.name.toUpperFirst()/]();
+	[/for]
+
+	//Nodes
+	[for (aRequirement : Requirement | aRequirementModel.requirements)]
+	[aRequirement.R2N()/]
+	[/for]
+} 
+[/file]
+[/template]
+
+[template public getImports(aRequirementModel : RequirementModel)]
+[for (aRequirement : Requirement | aRequirementModel.requirements)]
+import [aRequirement.name.replaceAll('\\.', '').toLowerFirst()/].*;
+[/for]
+[/template]
+
+[template public R2N(aRequirement : Requirement)]
+[aRequirement.getOutputVars()/][aRequirement.name.replaceAll('\\.', '').toLowerFirst()/]([aRequirement.getInputVars()/]);
+[/template]
+
+[template public getOutputVars(aRequirement : Requirement)]
+[for (aVariable: Variable | aRequirement.outputVars)]
+[aVariable.name/] = [/for]
+[/template]
+
+[template public getInputVars(aRequirement : Requirement)]
+[for (aVariable: Variable | aRequirement.inputVars)]
+_[aVariable.name/]<-[aVariable.name/][if(i<>aRequirement.inputVars->size())], [/if][/for]
+[/template]
+
+[template public getAncestor(aReq : Requirement, aVariable: Variable)]
+[if(aReq.ancestors(RequirementModel).requirements.outputVars->select(name.equalsIgnoreCase(aVariable.name))->size()>0)]
+[setCounter(aReq.ancestors(RequirementModel).requirements.outputVars->select(name.equalsIgnoreCase(aVariable.name))->size().toString())/]
+[for(aR2 : Requirement | aReq.ancestors(RequirementModel).requirements)]
+[if(aR2.outputVars->includes(aVariable))]
+[aVariable.name/].[aR2.name.replaceAll('\\.', '').toLowerFirst()/][if(getCounter('s')<>getIterator('s'))],[/if]
+[setIterator(aReq.ancestors(RequirementModel).requirements.outputVars->select(name.equalsIgnoreCase(aVariable.name))->size().toString())/][/if][/for][/if]
+[/template]
+
+[template public getInput(aRequirementModel : RequirementModel, aVar: Variable)]
+[for(aRequirement : Requirement | aRequirementModel.requirements)]
+[for(aVariable: Variable | aRequirement.inputVars)]
+[if(aVariable.name.equalsIgnoreCase(aVar.name))]
+[aVar.name/][/if][/for][/for]
+[/template]
+
+[template public R2CND(aRequirementModel : RequirementModel)] 
+[for(aRequirement : Requirement | aRequirementModel.requirements)]
+	[aRequirement.R2CND()/]
+[/for]
+[/template] 
+
+[template public R2CND(aRequirement : Requirement)]
+[file ('03-BehavioralModel/' + aRequirement.name.toLower() + '.midas', 
+false, 'UTF-8')]
+package [aRequirement.name.replaceAll('\\.', '').toLowerFirst()/];
+
+import primitives.*;
+import operations.*;
+import structuralModel.*; 
+
+node [aRequirement.name.replaceAll('\\.', '').toLowerFirst()/]([aRequirement.O2P()/]){
+	// [protected ('Node body')]
+	//[/protected]	
+} 
+[/file]
+[/template]
+
+[template public O2P(aRequirement : Requirement)]
+[for( aVariable: Variable | aRequirement.inputVars)]
+in [aVariable.name/]:[aVariable.type.typespecification.name/][if(i<> aRequirement.inputVars->size())],[/if][/for][if(aRequirement.outputVars->size()>0)],[/if]
+[for( aVariable: Variable | aRequirement.outputVars)]
+	out [aVariable.name/]:[aVariable.type.typespecification.name/][if(i<> aRequirement.outputVars->size())],[/if][/for]
+[/template]
+
+[query public setCounter(req: Requirement, s : String) : Integer = invoke('co.edu.javeriana.midas.generator.Util','setCounter(java.lang.String)', Sequence{s})/]
+[query public setIterator(req: Requirement, s : String) : Integer = invoke('co.edu.javeriana.midas.generator.Util','setIterator(java.lang.String)', Sequence{s})/]
+
+[query public getCounter(req: Requirement, s : String) : Integer = invoke('co.edu.javeriana.midas.generator.Util','getCounter(java.lang.String)', Sequence{s})/]
+[query public getIterator(req: Requirement, s : String) : Integer = invoke('co.edu.javeriana.midas.generator.Util','getIterator(java.lang.String)', Sequence{s})/]
+
+[query public getOutputPortName(s : String) : Real = invoke('co.edu.javeriana.midas.generator.Util','getOutputPortName(java.lang.String)', Sequence{s})/]
+
+
+
+
+
+[template public R2Controller(aComputationNodeDefinition : ComputationNodeDefinition)]
+[comment @main/]
+[file ('pim/controller/' + aComputationNodeDefinition.name.toUpperFirst() +'.isml', false, 'UTF-8')]
+package controllers;
+import views.*;
+import entities.*;
+
+controller [aComputationNodeDefinition.name.toUpperFirst()/]{
+
+	index(){}
+
+[for(aComponent: Component | aComputationNodeDefinition.subComponents)]
+[if(aComponent.oclIsTypeOf(ComputationNode))]
+	[aComponent.oclAsType(ComputationNode).callee.name.toLowerFirst()/]([aComponent.oclAsType(ComputationNode).Port2Parameter()/]){
+		//Contenido
+		[aComponent.oclAsType(ComputationNode).actionContent()/]
+	}
+[/if]
+[/for]
+}
+[/file]
+[/template]
+
+[template public actionContent(aComputationNode : ComputationNode)]
+[if(aComputationNode.callee.name.equalsIgnoreCase('decision'))]
+[for(aPort:Port | aComputationNode.ancestors(ComputationNodeDefinition).eAllContents(ComputationNode).inputPorts)]
+[if(aPort.value.oclIsKindOf(Reference))]
+[if(aComputationNode.outputPorts->at(1)->includes(aPort.value.oclAsType(Reference).referencedElement))]
+if(boolean){
+	->[aPort.ancestors(ComputationNode).callee.name/]();
+}
+else{
+[elseif(aComputationNode.outputPorts->at(2)->includes(aPort.value.oclAsType(Reference).referencedElement))]
+	->[aPort.ancestors(ComputationNode).callee.name/]();
+}
+[/if]
+[/if]
+[/for]
+[/if]
+[/template] 
+
+
+[template public Port2Parameter(aComputationNode : ComputationNode)]
+[for(aPort:Port | aComputationNode.inputPorts)]
+[if(aComputationNode.callee.name.equalsIgnoreCase('decision'))]
+Boolean [aPort.name/]
+[elseif(aPort.value.oclIsKindOf(StringValue))]
+String [aPort.name/]
+[elseif (aPort.value.oclIsKindOf(Reference))]
+[if(aPort.value.oclAsType(Reference).referencedElement.oclIsKindOf(PortDefinition))]
+[aPort.value.oclAsType(Reference).referencedElement.oclAsType(PortDefinition).type.typespecification.name/] [aPort.name/]
+[elseif(aPort.value.oclAsType(Reference).referencedElement.oclIsKindOf(Port))]
+Any [aPort.name/]
+[/if]
+[/if]
+[if(i<> aComputationNode.inputPorts->size())],[/if][/for]
+[/template]
+
+[template public R2View(aRequirement : Requirement)]
+[file ('pim/view/' + aRequirement.name +'.isml', false, 'UTF-8')]
+package views;
+import controllers.*;
+import entities.*;
+
+page [aRequirement.name.replaceAll('\\.', '')/] controlledBy [aRequirement.name.replaceAll('\\.', '')/]{
+
+}
+[/file]
+[/template]
+
+[template public getInputParameters(aRequirement : Requirement)]
+[for( aVariable: Variable | aRequirement.inputVars)] 
+V A R I A B L E S 
+[/for]
+[/template]
+[/comment]
